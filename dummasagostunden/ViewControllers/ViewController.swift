@@ -57,31 +57,38 @@ class ViewController: UIViewController {
         textfield.text = ""
         index += 1
         
+        if(index != typewords.count-1){
+        needword()
+        }
+        if(index == typewords.count-1) {
+            
+       
         
         
         //Ett försök att skicka över info till nästa sida
-        if(index == 3){
-            self.finalwords = storywords
-            performSegue(withIdentifier: "gonext" , sender: self) //Kanske ändra sender till nil
+        // if(index == 3){
+           // self.finalwords = storywords
+           performSegue(withIdentifier: "gonext" , sender: self) 
+}
+}
+       // if(index > 3){
         
-        if(index > 3){
-        
-            needword()
+          //  needword()
         }
         
     
     
           
-    }
+    
    
     
 
-}
+
         
-               override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let vc = segue.destination as! StoryView
-            vc.givemewords = finalwords
-}
+          //     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         //   let vc = segue.destination as! StoryView
+         //   vc.givemewords = finalwords
+
     
            
-}
+
