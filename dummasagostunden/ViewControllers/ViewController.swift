@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var donebutton: UIButton!
     @IBOutlet weak var ineed: UILabel!
     
+    
+    @IBOutlet weak var story: UILabel!
+    
     //Arrayen med ord som jag hämtar från användaren
     var storywords = [String]()
     var finalwords = [String]()
@@ -57,32 +60,48 @@ class ViewController: UIViewController {
         textfield.text = ""
         index += 1
         
+        
+        
         if(index != typewords.count-1){
         needword()
         }
         if(index == typewords.count-1) {
             
-       
+            story.text = "Det var en gång ett " + storywords[0] + " som hette " + storywords[1] + " och bodde i " + storywords[2] + "."
+            
         
         
         //Ett försök att skicka över info till nästa sida
         // if(index == 3){
            // self.finalwords = storywords
-           performSegue(withIdentifier: "gonext" , sender: self) 
+           //performSegue(withIdentifier: "gonext" , sender: self)
 }
+        
+        
 }
        // if(index > 3){
         
           //  needword()
-        }
-        
+
+    
+    @IBAction func reset(_ sender: Any) {
+        story.text = ""
+        index = 0
+        needword()
+    }
+    
     
     
           
     
    
     
-
+    //Ta bort skrivbordet
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
 
         
           //     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -92,3 +111,4 @@ class ViewController: UIViewController {
     
            
 
+}

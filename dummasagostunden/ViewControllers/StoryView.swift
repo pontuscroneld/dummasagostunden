@@ -19,9 +19,6 @@ class StoryView: UIViewController {
 
         //Jag hittar inte finalwords från andra sidan
         
-        thestory.text =
-        
-        "Det var en gång ett "
         
         
         // Do any additional setup after loading the view.
