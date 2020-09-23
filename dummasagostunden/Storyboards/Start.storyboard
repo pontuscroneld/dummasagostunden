@@ -119,35 +119,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Sq-4gi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Sq-4gi">
                                 <rect key="frame" x="50" y="101" width="314" height="480"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Sxo-6H-OE1"/>
+                                    <constraint firstAttribute="height" constant="480" id="UXK-nz-QCJ"/>
+                                </constraints>
                                 <mutableString key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
 
 Storytajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar. 
 </mutableString>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLI EN STORYTAJMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-k3-ZTB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLI EN STORYTAJMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-k3-ZTB">
                                 <rect key="frame" x="117" y="41" width="180" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newstorytajmwhite" highlightedImage="newstorytajmwhite" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-oF-RLT">
-                                <rect key="frame" x="50" y="589" width="314" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-oF-RLT">
+                                <rect key="frame" x="97" y="588" width="220" height="220"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="98W-rL-nxq"/>
+                                    <constraint firstAttribute="width" constant="220" id="JIl-rz-xlW"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m8d-6y-4WK"/>
                         <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="5nN-Sq-4gi" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="50" id="72g-I5-ioy"/>
-                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="5nN-Sq-4gi" secondAttribute="trailing" constant="50" id="Puu-qz-gJY"/>
-                            <constraint firstItem="5nN-Sq-4gi" firstAttribute="top" secondItem="m8d-6y-4WK" secondAttribute="top" constant="80" id="laY-cu-j8b"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="97" id="0lT-l0-GIx"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="7" id="3qg-sh-Okg"/>
+                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="a1A-k3-ZTB" secondAttribute="trailing" constant="117" id="BcZ-EF-3HG"/>
+                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="117" id="I8N-4R-Ek3"/>
+                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="Ts0-oF-RLT" secondAttribute="trailing" constant="97" id="KL7-Rn-2lt"/>
+                            <constraint firstItem="5nN-Sq-4gi" firstAttribute="top" secondItem="a1A-k3-ZTB" secondAttribute="bottom" constant="31" id="PWX-bE-9fp"/>
+                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="top" secondItem="m8d-6y-4WK" secondAttribute="top" constant="41" id="Vba-5h-T1c"/>
+                            <constraint firstItem="5nN-Sq-4gi" firstAttribute="centerX" secondItem="k36-MJ-kPc" secondAttribute="centerX" id="Xjf-PR-P4h"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="7" id="hGk-He-FFo"/>
+                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="Ts0-oF-RLT" secondAttribute="trailing" constant="97" id="jDo-n7-LiL"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="97" id="uf0-nK-DuF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cnB-MP-yGf"/>
@@ -160,7 +174,7 @@ Storytajm förbehåller sig rätten att använda, redigera och omformulera alla 
     <resources>
         <image name="buttonorange" width="300" height="100"/>
         <image name="newstorytajm" width="700" height="700"/>
-        <image name="newstorytajmwhite" width="700" height="700"/>
+        <image name="newstorytajmpurple" width="700" height="700"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
