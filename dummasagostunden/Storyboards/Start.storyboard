@@ -29,8 +29,8 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="67o-tJ-Zob">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
-                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="45"/>
-                                                <state key="normal" title="START" backgroundImage="buttonorange">
+                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="25"/>
+                                                <state key="normal" title="VÄLJ EN HISTORIA!" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -40,7 +40,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-LN-wVg">
                                                 <rect key="frame" x="0.0" y="100" width="300" height="100"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="25"/>
-                                                <state key="normal" title="BLI EN STORYTAJMER" backgroundImage="buttonorange">
+                                                <state key="normal" title="BLI EN STORYTAJMER!" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="234.78260869565219" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--About-->
         <scene sceneID="N7o-Fl-b8S">
             <objects>
-                <viewController id="6gR-rX-BvO" sceneMemberID="viewController">
+                <viewController title="About" id="6gR-rX-BvO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qpg-yw-73s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1063" y="390"/>
         </scene>
-        <!--View Controller-->
+        <!--Author-->
         <scene sceneID="czo-Uu-CyM">
             <objects>
-                <viewController id="CLr-i2-AO1" sceneMemberID="viewController">
+                <viewController title="Author" id="CLr-i2-AO1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k36-MJ-kPc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
