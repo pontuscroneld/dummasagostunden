@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -68,6 +69,16 @@ class ViewController: UIViewController {
         if(index == typewords.count-1) {
             
             story.text = "Det var en gång ett " + storywords[0] + " som hette " + storywords[1] + " och bodde i " + storywords[2] + "."
+          
+            //Läs högt
+            
+            let voice = AVSpeechSynthesisVoice(language: "sv-SE")
+                  let toSay = AVSpeechUtterance(string: story.text!)
+                  toSay.voice = voice
+                  let spk = AVSpeechSynthesizer()
+                  spk.speak(toSay)
+
+            
             
         
         
