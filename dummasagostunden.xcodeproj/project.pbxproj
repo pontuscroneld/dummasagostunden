@@ -79,8 +79,8 @@
 		1475200F25135FFB00101FF8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				147520012513575F00101FF8 /* Main.storyboard */,
 				146A23B6251BB34C003BD169 /* Start.storyboard */,
+				147520012513575F00101FF8 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";

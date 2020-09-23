@@ -8,12 +8,25 @@
 import UIKit
 
 class StartView: UIViewController {
+    
+    @IBOutlet weak var background: UIView!
+    @IBOutlet weak var logotype: UIImageView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func buttonstart(_ sender: Any) {
+        
+        //Skickas till att välja historia
+        
+    }
+    
+    
     
 
     /*
