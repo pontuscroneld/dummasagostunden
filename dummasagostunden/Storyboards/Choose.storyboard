@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chewy-Regular.ttf">
+            <string>Chewy-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Choose View-->
+        <scene sceneID="oY1-rE-yD9">
+            <objects>
+                <viewController id="4xZ-Ap-M7K" customClass="ChooseView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpJ-6Q-pDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Y4-0z-nFb" userLabel="Background area">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-Cv-SbY" userLabel="Buttonstack">
+                                        <rect key="frame" x="40" y="115" width="334" height="630"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-PK-oIx">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="157.5"/>
+                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
+                                                <state key="normal" title="MIN HÄRLIGA SEMESTER" backgroundImage="buttonorange">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpO-Tp-6m9">
+                                                <rect key="frame" x="0.0" y="157.5" width="334" height="157.5"/>
+                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="23"/>
+                                                <state key="normal" title="FÖRLÅT MIG, ETT BREV" backgroundImage="buttonorange">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-Yh-pVO">
+                                                <rect key="frame" x="0.0" y="315" width="334" height="157.5"/>
+                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
+                                                <state key="normal" title="VILL DU GIFTA DIG MED MIG?" backgroundImage="buttonorange">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3N-SE-0da">
+                                                <rect key="frame" x="0.0" y="472.5" width="334" height="157.5"/>
+                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
+                                                <state key="normal" title="GREVENS NYA HEM" backgroundImage="buttonorange">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd"/>
+                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="cAP-Or-vgM"/>
+                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj"/>
+                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="top" secondItem="1Y4-0z-nFb" secondAttribute="top" constant="115" id="nNf-QA-LDe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9LY-fM-lyR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="top" secondItem="qpJ-6Q-pDQ" secondAttribute="top" id="2LU-c7-8Ok"/>
+                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="trailing" secondItem="9LY-fM-lyR" secondAttribute="trailing" id="IEA-3W-qdY"/>
+                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="leading" secondItem="9LY-fM-lyR" secondAttribute="leading" id="Jvn-zK-0Cz"/>
+                            <constraint firstAttribute="bottom" secondItem="1Y4-0z-nFb" secondAttribute="bottom" id="i7n-3l-nuj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.82608695652175" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonorange" width="300" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
