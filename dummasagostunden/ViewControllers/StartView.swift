@@ -25,6 +25,7 @@ class StartView: UIViewController {
         
         //Skickas till att välja historia
         
+        
     }
     
     

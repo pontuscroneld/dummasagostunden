@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     //Arrayen med ord som jag hämtar från användaren
     var storywords = [String]()
-    var finalwords = [String]()
+    // var finalwords = [String]()
     
     //Lämnar en ledig plats för att undvika crash
     //Typewords är typen av ord som användaren ska fylla i
