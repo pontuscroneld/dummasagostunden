@@ -103,25 +103,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT PAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
-                                <rect key="frame" x="112" y="395.5" width="190.5" height="51.5"/>
-                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="40"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
+                                <rect key="frame" x="50" y="101" width="314" height="424"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Fwt-yi-dqc"/>
+                                    <constraint firstAttribute="height" constant="424" id="YRQ-Uu-8J9"/>
+                                </constraints>
+                                <mutableString key="text">Inspirationen bakom appen Storytajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
+
+Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till ____________. Vi svarar så fort vi har möjlighet!</mutableString>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILL DU VETA MER?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-jZ-5F0">
+                                <rect key="frame" x="121.5" y="41" width="171" height="29"/>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-00-hX5">
+                                <rect key="frame" x="97" y="552" width="220" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="ERp-sb-4j4"/>
+                                    <constraint firstAttribute="height" constant="220" id="Mxk-Ao-BV6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EXd-7n-fYg"/>
                         <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="gak-nW-l7g" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="0ex-xL-90S"/>
-                            <constraint firstItem="gak-nW-l7g" firstAttribute="centerY" secondItem="Qpg-yw-73s" secondAttribute="centerY" id="y8x-np-qNa"/>
+                            <constraint firstItem="Ewh-jZ-5F0" firstAttribute="top" secondItem="EXd-7n-fYg" secondAttribute="top" constant="41" id="33x-D2-miZ"/>
+                            <constraint firstItem="gak-nW-l7g" firstAttribute="centerX" secondItem="Ewh-jZ-5F0" secondAttribute="centerX" id="7Tb-FR-RUM"/>
+                            <constraint firstItem="gak-nW-l7g" firstAttribute="top" secondItem="Ewh-jZ-5F0" secondAttribute="bottom" constant="31" id="L5o-yT-QKh"/>
+                            <constraint firstItem="EXd-7n-fYg" firstAttribute="bottom" secondItem="Tnh-00-hX5" secondAttribute="bottom" constant="36" id="VLe-PY-70c"/>
+                            <constraint firstItem="Ewh-jZ-5F0" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="iCC-cA-TZ5"/>
+                            <constraint firstItem="Tnh-00-hX5" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="qQG-zV-Yj1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rca-Q0-Y1R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHH-u7-VFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="390"/>
+            <point key="canvasLocation" x="1062.3188405797102" y="389.73214285714283"/>
         </scene>
         <!--Author-->
         <scene sceneID="czo-Uu-CyM">
