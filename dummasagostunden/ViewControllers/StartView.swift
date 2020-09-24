@@ -23,7 +23,7 @@ class StartView: UIViewController {
     
     @IBAction func buttonstart(_ sender: Any) {
         
-        //Skickas till att välja historia
+        //Skickas till ChooseView
         
         
     }
