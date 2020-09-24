@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Read View-->
+        <scene sceneID="N2g-Oy-h8Z">
+            <objects>
+                <viewController id="ZcD-Pq-hXL" customClass="ReadView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0n5-Ek-v2z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-K1-XUB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Här ska historien hamna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-Nd-a5J">
+                                        <rect key="frame" x="115" y="437.5" width="184" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerY" secondItem="T0W-K1-XUB" secondAttribute="centerY" id="1SC-0w-Rbl"/>
+                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="YUd-lA-29G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t5s-AH-5gS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T0W-K1-XUB" secondAttribute="bottom" id="EiN-aW-tSi"/>
+                            <constraint firstAttribute="trailing" secondItem="T0W-K1-XUB" secondAttribute="trailing" id="Gx7-ZN-G12"/>
+                            <constraint firstItem="T0W-K1-XUB" firstAttribute="top" secondItem="0n5-Ek-v2z" secondAttribute="top" id="Mke-xa-YXc"/>
+                            <constraint firstItem="T0W-K1-XUB" firstAttribute="leading" secondItem="0n5-Ek-v2z" secondAttribute="leading" id="fcD-d7-dRD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="thestory" destination="tEL-Nd-a5J" id="3MO-7L-dK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fU-Qt-uUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342.02898550724638" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
