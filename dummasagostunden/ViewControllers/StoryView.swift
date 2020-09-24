@@ -40,6 +40,7 @@ class StoryView: UIViewController {
         super.viewDidLoad()
 
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
+        
     }
     
     func givemeword(){
