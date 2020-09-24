@@ -9,22 +9,21 @@ import UIKit
 
 class StoryView: UIViewController {
 
-    @IBOutlet weak var thestory: UILabel!
-    var givemewords = [String]()
     
-   
+    @IBOutlet weak var Textfield: UITextField!
+    @IBOutlet weak var Neededword: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Jag hittar inte finalwords från andra sidan
         
-        
-        
-        // Do any additional setup after loading the view.
     }
     
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
    
 
 }

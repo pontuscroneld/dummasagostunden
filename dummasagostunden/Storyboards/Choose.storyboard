@@ -57,11 +57,19 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DET KOMMER SNART FLER..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Yg-ewf">
+                                        <rect key="frame" x="118" y="745" width="178" height="22"/>
+                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                        <color key="textColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
+                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="05D-DV-DU8"/>
                                     <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR"/>
                                     <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd"/>
+                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="top" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" id="WGm-Ya-RPY"/>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="cAP-Or-vgM"/>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj"/>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="top" secondItem="1Y4-0z-nFb" secondAttribute="top" constant="115" id="nNf-QA-LDe"/>

@@ -102,8 +102,20 @@
                     <view key="view" contentMode="scaleToFill" id="Qpg-yw-73s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT PAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
+                                <rect key="frame" x="112" y="395.5" width="190.5" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EXd-7n-fYg"/>
                         <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gak-nW-l7g" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="0ex-xL-90S"/>
+                            <constraint firstItem="gak-nW-l7g" firstAttribute="centerY" secondItem="Qpg-yw-73s" secondAttribute="centerY" id="y8x-np-qNa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rca-Q0-Y1R"/>
                 </viewController>
@@ -125,10 +137,10 @@
                                     <constraint firstAttribute="width" constant="314" id="Sxo-6H-OE1"/>
                                     <constraint firstAttribute="height" constant="480" id="UXK-nz-QCJ"/>
                                 </constraints>
-                                <mutableString key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
+                                <string key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
 
 Storytajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar. 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
