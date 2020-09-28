@@ -13,6 +13,8 @@ class ReadView: UIViewController {
     
     @IBOutlet weak var thestory: UILabel!
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

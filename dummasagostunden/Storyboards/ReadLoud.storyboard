@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZcD-Pq-hXL">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,27 +18,44 @@
             <objects>
                 <viewController id="ZcD-Pq-hXL" customClass="ReadView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0n5-Ek-v2z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-K1-XUB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Här ska historien hamna " lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-Nd-a5J">
-                                        <rect key="frame" x="30" y="60" width="354" height="776"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Här ska historien hamna " lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-Nd-a5J">
+                                        <rect key="frame" x="30" y="60" width="964" height="1246"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                         <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="28"/>
+                                        </variation>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMM-Vd-Coa">
+                                        <rect key="frame" x="487" y="1256" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ATV-Kg-bVv"/>
+                                            <constraint firstAttribute="height" constant="50" id="Wtu-bi-y5h"/>
+                                        </constraints>
+                                        <state key="normal" title="Main"/>
+                                        <connections>
+                                            <segue destination="E4s-ee-Q9I" kind="modal" modalPresentationStyle="fullScreen" id="qBH-7v-0ih"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerY" secondItem="T0W-K1-XUB" secondAttribute="centerY" id="1SC-0w-Rbl"/>
                                     <constraint firstAttribute="bottom" secondItem="tEL-Nd-a5J" secondAttribute="bottom" constant="60" id="8IQ-hD-kCK"/>
                                     <constraint firstAttribute="trailing" secondItem="tEL-Nd-a5J" secondAttribute="trailing" constant="30" id="9ek-Qf-xIE"/>
+                                    <constraint firstItem="SMM-Vd-Coa" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="Bq8-td-zJo"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="leading" secondItem="T0W-K1-XUB" secondAttribute="leading" constant="30" id="JKY-a2-KHi"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="60" id="QYp-uL-fNc"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="YUd-lA-29G"/>
+                                    <constraint firstAttribute="bottom" secondItem="SMM-Vd-Coa" secondAttribute="bottom" constant="60" id="rIf-2k-VSu"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -58,6 +75,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fU-Qt-uUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-342.02898550724638" y="43.526785714285715"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="eZD-g0-dYc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="E4s-ee-Q9I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cPh-ge-jdJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pc0-zr-stD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="383"/>
         </scene>
     </scenes>
     <resources>

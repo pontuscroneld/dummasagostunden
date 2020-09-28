@@ -11,7 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
     //När man har lagt till det sista ordet crashar programmet.
-    
+  
     
     
     @IBOutlet weak var textfield: UITextField!
@@ -22,7 +22,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var story: UILabel!
     
     //Arrayen med ord som jag hämtar från användaren
-    var storywords = [String]()
+    var storywords = [String: Any]()
+    
+    
+    
     // var finalwords = [String]()
     
     //Lämnar en ledig plats för att undvika crash
@@ -99,6 +102,9 @@ class ViewController: UIViewController {
         story.text = ""
         index = 0
         needword()
+        //Perform segue efter Bills exempel, ligger egentligen på fel ställe
+        performSegue(withIdentifier: "gostory", sender: storywords)
+            
     }
     
     
@@ -119,7 +125,17 @@ class ViewController: UIViewController {
          //   let vc = segue.destination as! StoryView
          //   vc.givemewords = finalwords
 
+   
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "gotodo"){
+            
+        
+        var dest = segue.destination as! StoryView
+        dest.thetodoinfo = sender as! [String: Any]
+        }
+    }
            
 
 }

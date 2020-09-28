@@ -17,6 +17,9 @@ class StoryView: UIViewController {
     let typewords = [String]()
     var index = 0
     
+    var thetodoinfo = [String: Any]()
+   
+    
     //playerwords är orden som spelaren ska fylla i
     //typewords är beskrivningen av vilket ord spelaren ska fylla i
     //index är sättet att hålla koll på att playerwords och typewords är samma nummer
@@ -47,6 +50,7 @@ class StoryView: UIViewController {
        
         //Jag behöver ett typewords med plats (index) i listan
         Neededword.text = typewords[index]
+        
         
     }
     

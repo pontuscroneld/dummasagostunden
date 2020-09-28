@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xZ-Ap-M7K">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -63,12 +63,26 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-L8-RDt">
+                                        <rect key="frame" x="177" y="787" width="60" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K9P-1m-yCh"/>
+                                            <constraint firstAttribute="width" constant="60" id="cFE-eF-412"/>
+                                        </constraints>
+                                        <state key="normal" title="Main"/>
+                                        <connections>
+                                            <segue destination="33J-xG-aog" kind="modal" modalPresentationStyle="fullScreen" id="eoy-ho-Dss"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstItem="5Vy-Yg-ewf" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="05D-DV-DU8"/>
                                     <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR"/>
+                                    <constraint firstItem="cTc-L8-RDt" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="N5u-mR-5wy"/>
                                     <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd"/>
+                                    <constraint firstItem="cTc-L8-RDt" firstAttribute="top" secondItem="5Vy-Yg-ewf" secondAttribute="bottom" constant="20" id="Rkx-ck-3VF"/>
                                     <constraint firstItem="5Vy-Yg-ewf" firstAttribute="top" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" id="WGm-Ya-RPY"/>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="cAP-Or-vgM"/>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj"/>
@@ -89,6 +103,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="247.82608695652175" y="107.8125"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="x7t-D7-Ydt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="33J-xG-aog" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="46s-AI-bxZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hm-Wc-a4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="334"/>
         </scene>
     </scenes>
     <resources>
