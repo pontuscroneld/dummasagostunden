@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C14-6i-1no">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fyll i ditt ord här" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-jm-ClY">
-                                <rect key="frame" x="82" y="410.5" width="250" height="75"/>
+                                <rect key="frame" x="292" y="559.5" width="250" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="AAG-0t-bZG"/>
                                     <constraint firstAttribute="height" constant="75" id="xhs-33-bd8"/>
@@ -31,20 +31,20 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-Gs-OrV">
-                                <rect key="frame" x="180" y="505.5" width="54" height="30"/>
+                                <rect key="frame" x="390" y="654.5" width="54" height="30"/>
                                 <state key="normal" title="Lägg till"/>
                                 <connections>
                                     <action selector="addword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNz-4B-Hjh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iho-Ji-iQY">
-                                <rect key="frame" x="0.0" y="351.5" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="500.5" width="834" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-wC-7Kw">
-                                <rect key="frame" x="20" y="622" width="374" height="200"/>
+                                <rect key="frame" x="20" y="934" width="794" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="JKu-nJ-3Ur"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-HH-rat">
-                                <rect key="frame" x="176.5" y="545.5" width="61" height="30"/>
+                                <rect key="frame" x="386.5" y="694.5" width="61" height="30"/>
                                 <state key="normal" title="Börja om"/>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbq-1h-Mac"/>
@@ -95,31 +95,38 @@
             <objects>
                 <viewController storyboardIdentifier="Storyboard" title="Story" id="C14-6i-1no" customClass="StoryView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaL-YA-khd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-JD-DdA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv ditt ord här!" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xME-K9-1vX">
-                                        <rect key="frame" x="57" y="413" width="300" height="70"/>
+                                        <rect key="frame" x="167" y="537" width="500" height="120"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="FQg-hQ-W1K"/>
-                                            <constraint firstAttribute="height" constant="70" id="b1i-56-DYm"/>
+                                            <constraint firstAttribute="width" constant="300" id="FQg-hQ-W1K">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="70" id="b1i-56-DYm">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
-                                        <rect key="frame" x="57" y="226" width="300" height="150"/>
+                                        <rect key="frame" x="57" y="350" width="720" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilket ord behöver jag?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lm-8mz">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="720" height="150"/>
                                                 <color key="backgroundColor" red="0.35267985318353251" green="0.31659936264604499" blue="0.86514284670777197" alpha="0.96580655809859151" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="40"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -60,7 +60,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DET KOMMER SNART FLER..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Yg-ewf">
                                         <rect key="frame" x="118" y="745" width="178" height="22"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                        <color key="textColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>

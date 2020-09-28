@@ -59,11 +59,19 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="MyW-zD-Ez4"/>
+                                            <constraint firstAttribute="width" constant="300" id="gdE-5S-iEX">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                            </constraint>
+                                        </constraints>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajm" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-Vd-xUv">
                                         <rect key="frame" x="8" y="81" width="396" height="350"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="350" id="lT9-R4-6fQ"/>
+                                            <constraint firstAttribute="height" constant="350" id="lT9-R4-6fQ">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -103,43 +111,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
-                                <rect key="frame" x="50" y="101" width="314" height="424"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="Fwt-yi-dqc"/>
-                                    <constraint firstAttribute="height" constant="424" id="YRQ-Uu-8J9"/>
-                                </constraints>
-                                <mutableString key="text">Inspirationen bakom appen Storytajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
-
-Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till ____________. Vi svarar så fort vi har möjlighet!</mutableString>
-                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILL DU VETA MER?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-jZ-5F0">
-                                <rect key="frame" x="121.5" y="41" width="171" height="29"/>
+                                <rect key="frame" x="122" y="41" width="170.5" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="28"/>
+                                </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-00-hX5">
-                                <rect key="frame" x="97" y="552" width="220" height="220"/>
+                                <rect key="frame" x="30" y="552" width="354" height="220"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="ERp-sb-4j4"/>
-                                    <constraint firstAttribute="height" constant="220" id="Mxk-Ao-BV6"/>
+                                    <constraint firstAttribute="height" constant="220" id="Mxk-Ao-BV6">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
+                                <rect key="frame" x="50" y="89.5" width="314" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Fwt-yi-dqc">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="390" id="YRQ-Uu-8J9"/>
+                                </constraints>
+                                <string key="text">Inspirationen bakom appen Storytajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
+
+Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till ____________. Vi svarar så fort vi har möjlighet!</string>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EXd-7n-fYg"/>
                         <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ewh-jZ-5F0" firstAttribute="top" secondItem="EXd-7n-fYg" secondAttribute="top" constant="41" id="33x-D2-miZ"/>
+                            <constraint firstItem="Ewh-jZ-5F0" firstAttribute="top" secondItem="EXd-7n-fYg" secondAttribute="top" constant="41" id="33x-D2-miZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                            </constraint>
                             <constraint firstItem="gak-nW-l7g" firstAttribute="centerX" secondItem="Ewh-jZ-5F0" secondAttribute="centerX" id="7Tb-FR-RUM"/>
-                            <constraint firstItem="gak-nW-l7g" firstAttribute="top" secondItem="Ewh-jZ-5F0" secondAttribute="bottom" constant="31" id="L5o-yT-QKh"/>
-                            <constraint firstItem="EXd-7n-fYg" firstAttribute="bottom" secondItem="Tnh-00-hX5" secondAttribute="bottom" constant="36" id="VLe-PY-70c"/>
+                            <constraint firstItem="gak-nW-l7g" firstAttribute="top" secondItem="Ewh-jZ-5F0" secondAttribute="bottom" constant="20" id="L5o-yT-QKh"/>
+                            <constraint firstItem="EXd-7n-fYg" firstAttribute="bottom" secondItem="Tnh-00-hX5" secondAttribute="bottom" constant="36" id="VLe-PY-70c">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
                             <constraint firstItem="Ewh-jZ-5F0" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="iCC-cA-TZ5"/>
                             <constraint firstItem="Tnh-00-hX5" firstAttribute="centerX" secondItem="Qpg-yw-73s" secondAttribute="centerX" id="qQG-zV-Yj1"/>
+                            <constraint firstItem="Tnh-00-hX5" firstAttribute="leading" secondItem="Qpg-yw-73s" secondAttribute="leading" constant="30" id="wAk-ZX-uHq">
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Tnh-00-hX5" secondAttribute="trailing" constant="30" id="yUz-ui-DWX">
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rca-Q0-Y1R"/>
@@ -159,7 +186,9 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Sq-4gi">
                                 <rect key="frame" x="50" y="101" width="314" height="480"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="Sxo-6H-OE1"/>
+                                    <constraint firstAttribute="width" constant="314" id="Sxo-6H-OE1">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="480" id="UXK-nz-QCJ"/>
                                 </constraints>
                                 <string key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
@@ -169,43 +198,59 @@ Storytajm förbehåller sig rätten att använda, redigera och omformulera alla 
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="21"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLI EN STORYTAJMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-k3-ZTB">
-                                <rect key="frame" x="117" y="41" width="180" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLI EN STORYTAJMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-k3-ZTB">
+                                <rect key="frame" x="100" y="41" width="214" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="ANJ-pm-BfP"/>
+                                    <constraint firstAttribute="width" constant="214" id="sx2-Xb-4kH">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="28"/>
+                                </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-oF-RLT">
-                                <rect key="frame" x="97" y="588" width="220" height="220"/>
+                                <rect key="frame" x="30" y="589" width="354" height="220"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="98W-rL-nxq"/>
-                                    <constraint firstAttribute="width" constant="220" id="JIl-rz-xlW"/>
+                                    <constraint firstAttribute="height" constant="220" id="98W-rL-nxq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m8d-6y-4WK"/>
                         <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="97" id="0lT-l0-GIx"/>
-                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="7" id="3qg-sh-Okg"/>
-                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="a1A-k3-ZTB" secondAttribute="trailing" constant="117" id="BcZ-EF-3HG"/>
-                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="117" id="I8N-4R-Ek3"/>
-                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="Ts0-oF-RLT" secondAttribute="trailing" constant="97" id="KL7-Rn-2lt"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="30" id="0lT-l0-GIx">
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="8" id="3qg-sh-Okg"/>
+                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="Ts0-oF-RLT" secondAttribute="trailing" constant="30" id="KL7-Rn-2lt">
+                                <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            </constraint>
                             <constraint firstItem="5nN-Sq-4gi" firstAttribute="top" secondItem="a1A-k3-ZTB" secondAttribute="bottom" constant="31" id="PWX-bE-9fp"/>
-                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="top" secondItem="m8d-6y-4WK" secondAttribute="top" constant="41" id="Vba-5h-T1c"/>
+                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="top" secondItem="m8d-6y-4WK" secondAttribute="top" constant="41" id="Vba-5h-T1c">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
                             <constraint firstItem="5nN-Sq-4gi" firstAttribute="centerX" secondItem="k36-MJ-kPc" secondAttribute="centerX" id="Xjf-PR-P4h"/>
-                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="7" id="hGk-He-FFo"/>
-                            <constraint firstItem="m8d-6y-4WK" firstAttribute="trailing" secondItem="Ts0-oF-RLT" secondAttribute="trailing" constant="97" id="jDo-n7-LiL"/>
-                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="leading" secondItem="m8d-6y-4WK" secondAttribute="leading" constant="97" id="uf0-nK-DuF"/>
+                            <constraint firstItem="Ts0-oF-RLT" firstAttribute="top" secondItem="5nN-Sq-4gi" secondAttribute="bottom" constant="8" id="hGk-He-FFo"/>
+                            <constraint firstItem="a1A-k3-ZTB" firstAttribute="centerX" secondItem="k36-MJ-kPc" secondAttribute="centerX" id="yUS-NV-tMo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cnB-MP-yGf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qE1-lo-8p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1069.5652173913045" y="-260.49107142857144"/>
+            <point key="canvasLocation" x="1066.6666666666667" y="-261.83035714285711"/>
         </scene>
     </scenes>
     <resources>
