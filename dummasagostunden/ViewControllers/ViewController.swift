@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var story: UILabel!
     
     //Arrayen med ord som jag hämtar från användaren
-    var storywords = [String: Any]()
+    var storywords = [String]()
     
     
     
