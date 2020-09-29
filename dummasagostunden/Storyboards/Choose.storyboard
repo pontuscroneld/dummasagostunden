@@ -13,6 +13,16 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Start-->
+        <scene sceneID="ABj-Mw-dHz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Start" id="8Un-jt-9Lf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="je0-om-e4t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5F-lh-bZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="-262"/>
+        </scene>
         <!--Choose View-->
         <scene sceneID="oY1-rE-yD9">
             <objects>
@@ -75,30 +85,45 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-L8-RDt">
-                                        <rect key="frame" x="177" y="787" width="60" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-Yw-m5R">
+                                        <rect key="frame" x="118" y="787" width="178" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="K9P-1m-yCh"/>
-                                            <constraint firstAttribute="width" constant="60" id="cFE-eF-412"/>
+                                            <constraint firstAttribute="height" constant="30" id="PfR-wF-VcL"/>
+                                            <constraint firstAttribute="width" constant="178" id="qlL-LV-o2s"/>
                                         </constraints>
-                                        <state key="normal" title="Main"/>
+                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="TILLBAKA TILL START?">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="33J-xG-aog" kind="modal" modalPresentationStyle="fullScreen" id="eoy-ho-Dss"/>
+                                            <action selector="goback:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="lRb-DR-dnI"/>
+                                            <segue destination="8Un-jt-9Lf" kind="modal" identifier="goback" animates="NO" modalPresentationStyle="fullScreen" id="gJ6-HJ-hrd"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstItem="5Vy-Yg-ewf" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="05D-DV-DU8"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR"/>
-                                    <constraint firstItem="cTc-L8-RDt" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="N5u-mR-5wy"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd"/>
-                                    <constraint firstItem="cTc-L8-RDt" firstAttribute="top" secondItem="5Vy-Yg-ewf" secondAttribute="bottom" constant="20" id="Rkx-ck-3VF"/>
-                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="top" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" id="WGm-Ya-RPY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="top" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" id="WGm-Ya-RPY">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
                                     <constraint firstItem="Dfu-Cv-SbY" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="cAP-Or-vgM"/>
-                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj"/>
-                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="top" secondItem="1Y4-0z-nFb" secondAttribute="top" constant="115" id="nNf-QA-LDe"/>
+                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstItem="79D-Yw-m5R" firstAttribute="top" secondItem="5Vy-Yg-ewf" secondAttribute="bottom" constant="20" id="fpq-Za-QoI"/>
+                                    <constraint firstItem="79D-Yw-m5R" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="gb9-eK-wne"/>
+                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="top" secondItem="1Y4-0z-nFb" secondAttribute="top" constant="115" id="nNf-QA-LDe">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                         </subviews>
@@ -112,12 +137,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
+                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" animates="NO" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="155"/>
+            <point key="canvasLocation" x="185.50724637681162" y="154.6875"/>
         </scene>
         <!--Main-->
         <scene sceneID="Wzc-UD-txz">

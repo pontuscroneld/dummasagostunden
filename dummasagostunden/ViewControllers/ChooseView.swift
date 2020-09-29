@@ -45,5 +45,10 @@ class ChooseView: UIViewController {
             dest.choice = thechoice
         }
     }
-
+    
+    
+    @IBAction func goback(_ sender: Any) {
+        performSegue(withIdentifier: "goback", sender: nil)
+    }
+    
 }

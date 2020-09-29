@@ -45,7 +45,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonstart:" destination="Y2K-AO-gob" eventType="touchUpInside" id="sxH-6B-Abf"/>
-                                                    <segue destination="L4l-GT-KaS" kind="modal" modalPresentationStyle="fullScreen" id="2yX-5Q-f7P"/>
+                                                    <segue destination="L4l-GT-KaS" kind="modal" animates="NO" modalPresentationStyle="fullScreen" id="2yX-5Q-f7P"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-LN-wVg">
