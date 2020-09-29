@@ -115,6 +115,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <action selector="addword:" destination="C14-6i-1no" eventType="primaryActionTriggered" id="aYC-Rj-Eqt"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
                                         <rect key="frame" x="57" y="226" width="300" height="150"/>
@@ -139,60 +142,14 @@
                                             <constraint firstItem="VfF-Lm-8mz" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="top" id="u2A-UB-nEZ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKP-Ix-Zp9">
-                                        <rect key="frame" x="235" y="709" width="95" height="94"/>
-                                        <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="95" id="b00-s0-gRH"/>
-                                            <constraint firstAttribute="height" constant="94" id="b4z-ff-EM2"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                        <state key="normal" title="Start"/>
-                                        <connections>
-                                            <segue destination="qGo-Z7-f9C" kind="modal" modalPresentationStyle="fullScreen" id="M8q-NA-Dro"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-Ob-cVp">
-                                        <rect key="frame" x="111" y="709" width="95" height="94"/>
-                                        <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="95" id="0ty-nf-ecK"/>
-                                            <constraint firstAttribute="height" constant="94" id="Icg-RV-N8C"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="SFb-bG-r15"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="VyJ-Tk-H5L"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                        <state key="normal" title="Choose"/>
-                                        <connections>
-                                            <segue destination="V2m-pD-WRk" kind="modal" identifier="" modalPresentationStyle="fullScreen" id="wtJ-pq-Vtk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNk-nC-gqg">
-                                        <rect key="frame" x="157" y="511" width="100" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="LUO-Ux-wgc"/>
-                                            <constraint firstAttribute="width" constant="100" id="gib-UD-JTD"/>
-                                        </constraints>
-                                        <state key="normal" title="Add"/>
-                                        <connections>
-                                            <action selector="addword:" destination="C14-6i-1no" eventType="touchUpInside" id="oii-1p-agA"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstItem="XNk-nC-gqg" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="1So-an-g4r"/>
-                                    <constraint firstAttribute="bottom" secondItem="JKP-Ix-Zp9" secondAttribute="bottom" constant="93" id="GWm-ba-mSk"/>
                                     <constraint firstAttribute="trailing" secondItem="Wv0-4N-OKD" secondAttribute="trailing" constant="57" id="Jq3-52-oTk"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="SsG-h4-nZW"/>
                                     <constraint firstItem="Wv0-4N-OKD" firstAttribute="leading" secondItem="A7j-JD-DdA" secondAttribute="leading" constant="57" id="Tfn-Xh-8c2"/>
-                                    <constraint firstItem="XNk-nC-gqg" firstAttribute="top" secondItem="xME-K9-1vX" secondAttribute="bottom" constant="28" id="aU7-oc-RCY"/>
-                                    <constraint firstAttribute="bottom" secondItem="VgT-Ob-cVp" secondAttribute="bottom" constant="93" id="daR-vR-MMU"/>
-                                    <constraint firstItem="JKP-Ix-Zp9" firstAttribute="leading" secondItem="VgT-Ob-cVp" secondAttribute="trailing" constant="29" id="gX4-5z-CLR"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerY" secondItem="A7j-JD-DdA" secondAttribute="centerY" id="m2l-hy-Tb1"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="bottom" constant="37" id="okB-5B-uGj"/>
-                                    <constraint firstAttribute="trailing" secondItem="JKP-Ix-Zp9" secondAttribute="trailing" constant="84" id="wGH-Eg-KkZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -225,26 +182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ES3-bE-SJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17430" y="1394"/>
-        </scene>
-        <!--Start-->
-        <scene sceneID="7aC-cx-aaX">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Start" id="qGo-Z7-f9C" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qUf-n5-w6B"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Bh-cA-WNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17494" y="1671"/>
-        </scene>
-        <!--Choose-->
-        <scene sceneID="Ntu-64-cJ3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Choose" id="V2m-pD-WRk" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="8Rp-uc-EGn"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="meX-gj-5ZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17671" y="1837"/>
         </scene>
     </scenes>
     <resources>
