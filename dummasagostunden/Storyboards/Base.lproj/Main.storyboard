@@ -236,11 +236,22 @@
                     <connections>
                         <outlet property="Neededword" destination="VfF-Lm-8mz" id="14j-EM-obT"/>
                         <outlet property="Textfield" destination="xME-K9-1vX" id="yyI-Lv-ude"/>
+                        <segue destination="mu1-HI-kl8" kind="modal" identifier="readstory" modalPresentationStyle="fullScreen" id="eXf-K2-Xca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOf-tc-BVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17943.165467625902" y="1469.8492462311558"/>
+            <point key="canvasLocation" x="-17880" y="1501"/>
+        </scene>
+        <!--ReadLoud-->
+        <scene sceneID="oEU-1d-GbE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ReadLoud" id="mu1-HI-kl8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b8e-oM-fCg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ES3-bE-SJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17430" y="1394"/>
         </scene>
         <!--Start-->
         <scene sceneID="7aC-cx-aaX">

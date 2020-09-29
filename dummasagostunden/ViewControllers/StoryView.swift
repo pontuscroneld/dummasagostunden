@@ -35,6 +35,9 @@ class StoryView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        playerwords.removeAll()
+        typewords.removeAll()
+        index = 0
         
 
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
@@ -97,10 +100,16 @@ class StoryView: UIViewController {
     func finishstory(){
         print(playerwords)
         //Skicka vidare full array playerwords till läs-sida?
-     
+        performSegue(withIdentifier: "readstory", sender: nil)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "readstory"){
+            var dest = segue.destination as! ReadView
+            dest.storywords = playerwords
+            dest.story = choice
+        }
+    }
     
     
     
