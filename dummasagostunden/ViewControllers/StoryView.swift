@@ -39,6 +39,7 @@ class StoryView: UIViewController {
         typewords.removeAll()
         index = 0
         
+        
 
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
        
@@ -50,10 +51,18 @@ class StoryView: UIViewController {
         }
         
         if(choice == "sorry" ){
-            typewords.append("ord" + "ord")
+            typewords = ["ett namn du skulle ge till en hund", "ditt namn", "en kroppsdel", "adjektiv plural",
+                        "kroppsdel plural", "adjektiv", "ett djur", "substantiv plural", "ett påhittat djur",
+                        "en plats", "ett adjektiv", "en typ av relation", "substantiv", "en plats", "en låt",
+                        "något man jobbar som, plural", "en färg", "ett klädesplagg"]
         }
         if(choice == "marry" ){
-            typewords.append("ord" + "ord")
+            typewords = ["En påhittad figur", "En tidsperiod", "En plats", "Ett sätt att äta, dåtid", "En händelse",
+                         "Ett adjektiv man använder för att beskriva ett plagg, bestämd form",
+                         "Ett smeknamn du skulle ge en söt hund", "Ett fånigt ord", "Ett nummer", "Kroppsdel plural",
+                         "Ett verb", "Något som finns i naturen", "Ett annat ord för barn", "En känd person",
+                         "Ett adjektiv, superlativ bestämd form - ex. största, gladaste", "Något man äter, bestämt form",
+                         "Något annat man äter till det"]
         }
         if(choice == "home" ){
             typewords.append("ord" + "ord")

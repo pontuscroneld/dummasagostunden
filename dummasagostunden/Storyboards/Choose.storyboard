@@ -43,6 +43,9 @@
                                                 <state key="normal" title="FÖRLÅT MIG, ETT BREV" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sorrychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="LuR-Bx-zuk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-Yh-pVO">
                                                 <rect key="frame" x="0.0" y="315" width="334" height="157.5"/>
@@ -50,6 +53,9 @@
                                                 <state key="normal" title="VILL DU GIFTA DIG MED MIG?" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="marrychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="5G0-Mc-EzR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3N-SE-0da">
                                                 <rect key="frame" x="0.0" y="472.5" width="334" height="157.5"/>
@@ -61,13 +67,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DET KOMMER SNART FLER..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Yg-ewf">
-                                        <rect key="frame" x="118" y="745" width="178" height="22"/>
+                                        <rect key="frame" x="90.5" y="745" width="233.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-L8-RDt">
-                                        <rect key="frame" x="177" y="787" width="60" height="40"/>
+                                        <rect key="frame" x="177" y="785" width="60" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="K9P-1m-yCh"/>
