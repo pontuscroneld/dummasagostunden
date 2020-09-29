@@ -65,7 +65,12 @@ class StoryView: UIViewController {
                          "Något annat man äter till det"]
         }
         if(choice == "home" ){
-            typewords.append("ord" + "ord")
+            typewords = ["ett namn", "ett land som inte finns", "en tidsperiod", "en plats", "ett tal",
+                         "ett adjektiv", "något som växer i naturen, plural (exempelvis svampar, blommor)",
+                         "ett material","ett nummer bestämd form, (exempelvis första, andra, tredje)",
+                         "ett adjektiv som slutar på a","ett djur som inte finns", "något man kan äta",
+                         "en sak plural", "ett adjektiv", "en affär", "verb som slutar på A",
+                         "ett adjektiv som slutar på A"]
         }
         
         givemeword()

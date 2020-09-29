@@ -16,8 +16,6 @@ class ChooseView: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    
     @IBAction func holidaychoice(_ sender: Any) {
         thechoice = "holiday"
         performSegue(withIdentifier: "storychosen", sender: nil)
@@ -29,10 +27,15 @@ class ChooseView: UIViewController {
         performSegue(withIdentifier: "storychosen", sender: nil)
         
     }
-    
     @IBAction func marrychoice(_ sender: Any) {
         thechoice = "marry"
         performSegue(withIdentifier: "storychosen", sender: nil)
+        
+    }
+    @IBAction func homechoice(_ sender: Any) {
+        thechoice = "home"
+        performSegue(withIdentifier: "storychosen", sender: nil)
+        
     }
     
     
