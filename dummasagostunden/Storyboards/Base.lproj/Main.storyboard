@@ -91,16 +91,6 @@
             </objects>
             <point key="canvasLocation" x="-18570" y="842"/>
         </scene>
-        <!--ReadLoud-->
-        <scene sceneID="4ry-2k-57O">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ReadLoud" id="F38-Vh-JXP" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xd8-Hf-CUM"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M8X-os-Yux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18390" y="1726"/>
-        </scene>
         <!--Story-->
         <scene sceneID="qxk-gI-R4v">
             <objects>
@@ -177,21 +167,6 @@
                                             <segue destination="V2m-pD-WRk" kind="modal" identifier="" modalPresentationStyle="fullScreen" id="wtJ-pq-Vtk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtC-gU-q8p">
-                                        <rect key="frame" x="-15" y="709" width="95" height="94"/>
-                                        <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="5kq-IP-l1H"/>
-                                            <constraint firstAttribute="height" constant="94" id="GMe-K3-cMa"/>
-                                            <constraint firstAttribute="width" constant="95" id="OdK-eM-UZW"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="SXj-NQ-q7L"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                        <state key="normal" title="Read"/>
-                                        <connections>
-                                            <segue destination="F38-Vh-JXP" kind="modal" modalPresentationStyle="fullScreen" id="ufh-Wy-ZkP"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNk-nC-gqg">
                                         <rect key="frame" x="157" y="511" width="100" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,7 +183,6 @@
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstItem="XNk-nC-gqg" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="1So-an-g4r"/>
-                                    <constraint firstAttribute="bottom" secondItem="wtC-gU-q8p" secondAttribute="bottom" constant="93" id="2Lw-cI-85b"/>
                                     <constraint firstAttribute="bottom" secondItem="JKP-Ix-Zp9" secondAttribute="bottom" constant="93" id="GWm-ba-mSk"/>
                                     <constraint firstAttribute="trailing" secondItem="Wv0-4N-OKD" secondAttribute="trailing" constant="57" id="Jq3-52-oTk"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="SsG-h4-nZW"/>
@@ -216,7 +190,6 @@
                                     <constraint firstItem="XNk-nC-gqg" firstAttribute="top" secondItem="xME-K9-1vX" secondAttribute="bottom" constant="28" id="aU7-oc-RCY"/>
                                     <constraint firstAttribute="bottom" secondItem="VgT-Ob-cVp" secondAttribute="bottom" constant="93" id="daR-vR-MMU"/>
                                     <constraint firstItem="JKP-Ix-Zp9" firstAttribute="leading" secondItem="VgT-Ob-cVp" secondAttribute="trailing" constant="29" id="gX4-5z-CLR"/>
-                                    <constraint firstItem="VgT-Ob-cVp" firstAttribute="leading" secondItem="wtC-gU-q8p" secondAttribute="trailing" constant="31" id="itV-qb-8fP"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerY" secondItem="A7j-JD-DdA" secondAttribute="centerY" id="m2l-hy-Tb1"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="bottom" constant="37" id="okB-5B-uGj"/>
                                     <constraint firstAttribute="trailing" secondItem="JKP-Ix-Zp9" secondAttribute="trailing" constant="84" id="wGH-Eg-KkZ"/>

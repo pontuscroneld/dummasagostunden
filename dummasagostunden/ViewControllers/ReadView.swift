@@ -14,6 +14,7 @@ class ReadView: UIViewController {
     @IBOutlet weak var thestory: UILabel!
     var storywords = [String]()
     var story = ""
+    let spk = AVSpeechSynthesizer()
     
 
     override func viewDidLoad() {
@@ -44,13 +45,14 @@ class ReadView: UIViewController {
     let voice = AVSpeechSynthesisVoice(language: "sv-SE")
           let toSay = AVSpeechUtterance(string: thestory.text!)
           toSay.voice = voice
-          let spk = AVSpeechSynthesizer()
+         
           spk.speak(toSay)
     }
 
     
     @IBAction func startover(_ sender: Any) {
         performSegue(withIdentifier: "startover", sender: nil)
+        spk.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
     
 }
