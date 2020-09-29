@@ -33,6 +33,9 @@
                                                 <state key="normal" title="MIN HÄRLIGA SEMESTER" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="holidaychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="Tqg-OH-8hU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpO-Tp-6m9">
                                                 <rect key="frame" x="0.0" y="157.5" width="334" height="157.5"/>
@@ -99,10 +102,23 @@
                             <constraint firstAttribute="bottom" secondItem="1Y4-0z-nFb" secondAttribute="bottom" id="i7n-3l-nuj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.82608695652175" y="107.8125"/>
+            <point key="canvasLocation" x="186" y="155"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Wzc-UD-txz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Noe-b0-lJb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="274-Gn-IND"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRQ-lz-h3i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="96"/>
         </scene>
         <!--Main-->
         <scene sceneID="x7t-D7-Ydt">

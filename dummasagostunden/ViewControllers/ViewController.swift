@@ -128,14 +128,7 @@ class ViewController: UIViewController {
    
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "gotodo"){
-            
-        
-        var dest = segue.destination as! StoryView
-        dest.thetodoinfo = sender as! [String: Any]
-        }
-    }
+    
            
 
 }

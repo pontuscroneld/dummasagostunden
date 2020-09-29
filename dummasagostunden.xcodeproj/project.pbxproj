@@ -105,8 +105,8 @@
 				146A23B6251BB34C003BD169 /* Start.storyboard */,
 				147520012513575F00101FF8 /* Main.storyboard */,
 				14361B76251CA9650050C11E /* Choose.storyboard */,
-				147520062513576200101FF8 /* LaunchScreen.storyboard */,
 				14361B7C251CBCEC0050C11E /* ReadLoud.storyboard */,
+				147520062513576200101FF8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";

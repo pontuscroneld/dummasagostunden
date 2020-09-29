@@ -14,10 +14,11 @@ class StoryView: UIViewController {
     @IBOutlet weak var Neededword: UILabel!
     
     var playerwords = [String]()
-    let typewords = [String]()
+    var typewords = [String]()
     var index = 0
     
-    var thetodoinfo = [String: Any]()
+    var choice = ""
+  
    
     
     //playerwords är orden som spelaren ska fylla i
@@ -31,18 +32,31 @@ class StoryView: UIViewController {
     //typewords måste ha ett bestämt antal innan funktionen givemeword() kallas.
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
+       
+        if(choice == "holiday" ){
+            typewords = ["en tid", "en plats", "en karaktär", "ett efternamn", "ett djur", "ett adjektiv",
+                         "ett substantiv, bestämd form", "något man säger när man ska gå och bada", "klädesplagg plural",
+                         "en kroppsdel", "en annan kroppsdel, bestämd form", "en tidsperiod", "substantiv, plural",
+                         "ett adjektiv som slutar på t", "en högtid", "något man äter", "ett adjektiv"]
+        }
+        
+        if(choice == "sorry" ){
+            typewords.append("ord" + "ord")
+        }
+        if(choice == "marry" ){
+            typewords.append("ord" + "ord")
+        }
+        if(choice == "home" ){
+            typewords.append("ord" + "ord")
+        }
+        
+        givemeword()
         
     }
     
@@ -55,8 +69,7 @@ class StoryView: UIViewController {
     }
     
     
-    
-    func addword(){
+    @IBAction func addword(_ sender: Any) {
     
         if(Textfield.text == "")
         {
@@ -67,21 +80,22 @@ class StoryView: UIViewController {
         Textfield.text = ""
         index += 1
         checkifdone()
+    }
     
-        }
     
     func checkifdone(){
     
-        if(index != typewords.count-1){
-        givemeword()
+        
+        if(index == typewords.count) {
+        finishstory()
         }
-        if(index == typewords.count-1) {
-        readstory()
+        else{
+            givemeword()
         }
     }
         
-    func readstory(){
-        
+    func finishstory(){
+        print(playerwords)
         //Skicka vidare full array playerwords till läs-sida?
      
     }
@@ -95,5 +109,6 @@ class StoryView: UIViewController {
         super.touchesBegan(touches, with: event)
     }
    
+
 
 }
