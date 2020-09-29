@@ -44,7 +44,7 @@ class StoryView: UIViewController {
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
        
         if(choice == "holiday" ){
-            typewords = ["en tid", "en plats", "en karaktär", "ett efternamn", "ett djur", "ett adjektiv",
+            typewords = ["en tidsperiod", "en plats", "en påhittad karaktär", "ett efternamn", "ett djur", "ett adjektiv",
                          "ett substantiv, bestämd form", "något man säger när man ska gå och bada", "klädesplagg plural",
                          "en kroppsdel", "en annan kroppsdel, bestämd form", "en tidsperiod", "substantiv, plural",
                          "ett adjektiv som slutar på t", "en högtid", "något man äter", "ett adjektiv"]
@@ -61,8 +61,7 @@ class StoryView: UIViewController {
                          "Ett adjektiv man använder för att beskriva ett plagg, bestämd form",
                          "Ett smeknamn du skulle ge en söt hund", "Ett fånigt ord", "Ett nummer", "Kroppsdel plural",
                          "Ett verb", "Något som finns i naturen", "Ett annat ord för barn", "En känd person",
-                         "Ett adjektiv, superlativ bestämd form - ex. största, gladaste", "Något man äter, bestämt form",
-                         "Något annat man äter till det"]
+                         "Ett adjektiv, superlativ bestämd form - ex. största, gladaste", "Något man äter, bestämd form", "Något annat man äter till det"]
         }
         if(choice == "home" ){
             typewords = ["ett namn", "ett land som inte finns", "en tidsperiod", "en plats", "ett tal",
