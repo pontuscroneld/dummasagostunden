@@ -48,4 +48,9 @@ class ReadView: UIViewController {
           spk.speak(toSay)
     }
 
+    
+    @IBAction func startover(_ sender: Any) {
+        performSegue(withIdentifier: "startover", sender: nil)
+    }
+    
 }
