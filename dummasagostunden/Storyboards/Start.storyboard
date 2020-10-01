@@ -192,9 +192,9 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                                     </constraint>
                                     <constraint firstAttribute="height" constant="473" id="UXK-nz-QCJ"/>
                                 </constraints>
-                                <mutableString key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
+                                <string key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på _____________ och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
 
-Storytajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</mutableString>
+Storytajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</string>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -218,7 +218,7 @@ Storytajm förbehåller sig rätten att använda, redigera och omformulera alla 
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-oF-RLT">
-                                <rect key="frame" x="121" y="582" width="173" height="159"/>
+                                <rect key="frame" x="120.5" y="582" width="173" height="159"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="HkY-sL-cHQ"/>

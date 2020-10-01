@@ -48,7 +48,7 @@ class ChooseView: UIViewController {
     
     
     @IBAction func goback(_ sender: Any) {
-        performSegue(withIdentifier: "goback", sender: nil)
+        presentingViewController?.dismiss(animated: false, completion: nil)
     }
     
 }

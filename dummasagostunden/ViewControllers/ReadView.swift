@@ -51,8 +51,11 @@ class ReadView: UIViewController {
 
     
     @IBAction func startover(_ sender: Any) {
-        performSegue(withIdentifier: "startover", sender: nil)
+        //performSegue(withIdentifier: "startover", sender: nil)
         spk.stopSpeaking(at: AVSpeechBoundary.immediate)
+        
+        presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+        
     }
     
 }

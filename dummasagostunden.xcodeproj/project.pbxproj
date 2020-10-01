@@ -21,6 +21,8 @@
 		147520082513576200101FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147520062513576200101FF8 /* LaunchScreen.storyboard */; };
 		14752013251360E800101FF8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14752012251360E800101FF8 /* StoryView.swift */; };
 		14B53494251BDEFB00E91F41 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14B53493251BDEF600E91F41 /* Chewy-Regular.ttf */; };
+		14E6F2ED2525C92B004DDCFD /* TheCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6F2EC2525C92B004DDCFD /* TheCollectionViewCell.swift */; };
+		14E6F2F42525CA61004DDCFD /* TheCWVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6F2F32525CA61004DDCFD /* TheCWVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		147520092513576200101FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14752012251360E800101FF8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		14B53493251BDEF600E91F41 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		14E6F2EC2525C92B004DDCFD /* TheCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCollectionViewCell.swift; sourceTree = "<group>"; };
+		14E6F2F32525CA61004DDCFD /* TheCWVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCWVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				146A23B9251BB36E003BD169 /* StartView.swift */,
 				14361B79251CAC730050C11E /* ChooseView.swift */,
 				14361B7F251CBD070050C11E /* ReadView.swift */,
+				14E6F2EC2525C92B004DDCFD /* TheCollectionViewCell.swift */,
+				14E6F2F32525CA61004DDCFD /* TheCWVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,11 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				147520002513575F00101FF8 /* ViewController.swift in Sources */,
+				14E6F2F42525CA61004DDCFD /* TheCWVC.swift in Sources */,
 				14361B7A251CAC730050C11E /* ChooseView.swift in Sources */,
 				146A23BA251BB36E003BD169 /* StartView.swift in Sources */,
 				14361B80251CBD070050C11E /* ReadView.swift in Sources */,
 				14751FFC2513575F00101FF8 /* AppDelegate.swift in Sources */,
 				14752013251360E800101FF8 /* StoryView.swift in Sources */,
+				14E6F2ED2525C92B004DDCFD /* TheCollectionViewCell.swift in Sources */,
 				14751FFE2513575F00101FF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xZ-Ap-M7K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8n0-rc-TdJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,15 +14,73 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Start-->
-        <scene sceneID="ABj-Mw-dHz">
+        <!--TheCWVC-->
+        <scene sceneID="OjR-pK-xvc">
             <objects>
-                <viewControllerPlaceholder storyboardName="Start" id="8Un-jt-9Lf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="je0-om-e4t"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y5F-lh-bZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="8n0-rc-TdJ" customClass="TheCWVC" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wn-IQ-V4q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-vh-eqy">
+                                <rect key="frame" x="55" y="99" width="304" height="613"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HGz-GF-ZMk">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="thecell" id="QP7-lc-gh5" customClass="TheCollectionViewCell" customModule="dummasagostunden" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xE4-UD-ofn" customClass="TheCollectionViewCell" customModule="dummasagostunden" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-qn-flv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.99713379140000002" green="0.74642807249999998" blue="0.34890946750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="gQg-qn-flv" firstAttribute="leading" secondItem="xE4-UD-ofn" secondAttribute="leading" id="059-Tc-mNn"/>
+                                                <constraint firstItem="gQg-qn-flv" firstAttribute="top" secondItem="xE4-UD-ofn" secondAttribute="top" id="0H0-5C-apE"/>
+                                                <constraint firstAttribute="bottom" secondItem="gQg-qn-flv" secondAttribute="bottom" id="9uV-Wf-sJr"/>
+                                                <constraint firstAttribute="trailing" secondItem="gQg-qn-flv" secondAttribute="trailing" id="F0h-gP-eAY"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="thelabel" destination="gQg-qn-flv" id="KiN-RR-wV3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8n0-rc-TdJ" id="NDr-ub-5Ed"/>
+                                    <outlet property="delegate" destination="8n0-rc-TdJ" id="DeM-v8-EDl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hkx-zo-8X5"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="eKU-vh-eqy" firstAttribute="top" secondItem="hkx-zo-8X5" secondAttribute="top" constant="55" id="G4X-ui-crV"/>
+                            <constraint firstItem="hkx-zo-8X5" firstAttribute="trailing" secondItem="eKU-vh-eqy" secondAttribute="trailing" constant="55" id="bhM-dr-Z4a"/>
+                            <constraint firstItem="hkx-zo-8X5" firstAttribute="bottom" secondItem="eKU-vh-eqy" secondAttribute="bottom" constant="150" id="hDN-T3-Isb"/>
+                            <constraint firstItem="eKU-vh-eqy" firstAttribute="leading" secondItem="hkx-zo-8X5" secondAttribute="leading" constant="55" id="ipj-t7-Cda"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Noe-b0-lJb" kind="presentation" identifier="gotostory" modalPresentationStyle="fullScreen" id="6l0-91-Y8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNK-jq-NoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-53" y="-262"/>
+            <point key="canvasLocation" x="-939.13043478260875" y="147.99107142857142"/>
         </scene>
         <!--Choose View-->
         <scene sceneID="oY1-rE-yD9">
@@ -78,6 +137,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DET KOMMER SNART FLER..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Yg-ewf">
                                         <rect key="frame" x="118" y="745" width="178" height="22"/>
@@ -99,7 +159,6 @@
                                         </state>
                                         <connections>
                                             <action selector="goback:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="lRb-DR-dnI"/>
-                                            <segue destination="8Un-jt-9Lf" kind="modal" identifier="goback" animates="NO" modalPresentationStyle="fullScreen" id="gJ6-HJ-hrd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -137,7 +196,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" animates="NO" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
+                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,17 +213,10 @@
             </objects>
             <point key="canvasLocation" x="946" y="96"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="x7t-D7-Ydt">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="33J-xG-aog" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="46s-AI-bxZ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4hm-Wc-a4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="842" y="334"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6l0-91-Y8z"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonorange" width="300" height="100"/>
         <systemColor name="systemBackgroundColor">

@@ -113,27 +113,28 @@
                                                 <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                                             </constraint>
                                         </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         <connections>
                                             <action selector="addword:" destination="C14-6i-1no" eventType="primaryActionTriggered" id="aYC-Rj-Eqt"/>
                                         </connections>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
                                         <rect key="frame" x="57" y="226" width="300" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilket ord behöver jag?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lm-8mz">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
-                                                <color key="backgroundColor" red="0.35267985318353251" green="0.31659936264604499" blue="0.86514284670777197" alpha="0.96580655809859151" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="40"/>
                                                 </variation>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="4Ex-PM-XO6"/>
                                             <constraint firstAttribute="trailing" secondItem="VfF-Lm-8mz" secondAttribute="trailing" id="ETA-Wx-P39"/>
@@ -142,12 +143,24 @@
                                             <constraint firstItem="VfF-Lm-8mz" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="top" id="u2A-UB-nEZ"/>
                                         </constraints>
                                     </view>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7So-YG-nJR">
+                                        <rect key="frame" x="57" y="547" width="300" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="ufA-pA-vHl"/>
+                                        </constraints>
+                                        <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="trackTintColor" red="0.18013932387105883" green="0.16171038580813857" blue="0.44189155136321234" alpha="0.56258252639999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="7So-YG-nJR" firstAttribute="width" secondItem="xME-K9-1vX" secondAttribute="width" id="1TM-2o-fLW"/>
                                     <constraint firstAttribute="trailing" secondItem="Wv0-4N-OKD" secondAttribute="trailing" constant="57" id="Jq3-52-oTk"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="SsG-h4-nZW"/>
                                     <constraint firstItem="Wv0-4N-OKD" firstAttribute="leading" secondItem="A7j-JD-DdA" secondAttribute="leading" constant="57" id="Tfn-Xh-8c2"/>
+                                    <constraint firstItem="7So-YG-nJR" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="hyU-KU-jbA"/>
+                                    <constraint firstItem="7So-YG-nJR" firstAttribute="top" secondItem="xME-K9-1vX" secondAttribute="bottom" constant="64" id="iD5-bb-s1f"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerY" secondItem="A7j-JD-DdA" secondAttribute="centerY" id="m2l-hy-Tb1"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="bottom" constant="37" id="okB-5B-uGj"/>
                                 </constraints>
@@ -166,12 +179,13 @@
                     <connections>
                         <outlet property="Neededword" destination="VfF-Lm-8mz" id="14j-EM-obT"/>
                         <outlet property="Textfield" destination="xME-K9-1vX" id="yyI-Lv-ude"/>
+                        <outlet property="progressview" destination="7So-YG-nJR" id="81d-1T-jpx"/>
                         <segue destination="mu1-HI-kl8" kind="modal" identifier="readstory" modalPresentationStyle="fullScreen" id="eXf-K2-Xca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOf-tc-BVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17881.159420289856" y="1500.6696428571429"/>
+            <point key="canvasLocation" x="-17959" y="1501"/>
         </scene>
         <!--ReadLoud-->
         <scene sceneID="oEU-1d-GbE">

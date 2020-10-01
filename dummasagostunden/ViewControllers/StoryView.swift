@@ -18,8 +18,13 @@ class StoryView: UIViewController {
     var index = 0
     
     var choice = ""
+    var progressrate = Progress(totalUnitCount: 0)
+    
+    @IBOutlet weak var progressview: UIProgressView!
   
-   
+    
+    
+    
     
     //playerwords är orden som spelaren ska fylla i
     //typewords är beskrivningen av vilket ord spelaren ska fylla i
@@ -72,11 +77,16 @@ class StoryView: UIViewController {
                          "ett adjektiv som slutar på A"]
         }
         
+        progressrate = Progress(totalUnitCount: Int64(typewords.count))
+        
         givemeword()
+       
         
     }
     
     func givemeword(){
+        
+    
        
         //Jag behöver ett typewords med plats (index) i listan
         Neededword.text = typewords[index]
@@ -95,6 +105,7 @@ class StoryView: UIViewController {
         playerwords.append(Textfield.text!)
         Textfield.text = ""
         index += 1
+        progressbar()
         checkifdone()
     }
     
@@ -114,6 +125,16 @@ class StoryView: UIViewController {
         print(playerwords)
         //Skicka vidare full array playerwords till läs-sida?
         performSegue(withIdentifier: "readstory", sender: nil)
+
+    }
+    
+    func progressbar()
+    {
+        self.progressrate.completedUnitCount += 1
+        let progressFloat = Float(self.progressrate.fractionCompleted)
+        self.progressview.setProgress(progressFloat, animated: true)
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -132,5 +153,6 @@ class StoryView: UIViewController {
     }
    
 
+    
 
 }

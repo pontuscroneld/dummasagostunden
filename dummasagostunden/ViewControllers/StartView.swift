@@ -28,7 +28,10 @@ class StartView: UIViewController {
         
     }
     
+   
     
+    
+
     
 
   
