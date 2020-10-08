@@ -9,6 +9,6 @@ import UIKit
 
 class TheCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var thelabel: UILabel!
     
+    @IBOutlet weak var thelabel: UILabel!
 }
