@@ -21,60 +21,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-Ls-oq2">
-                                <rect key="frame" x="50" y="44" width="314" height="756"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-Ls-oq2">
+                                <rect key="frame" x="37" y="44" width="340" height="956"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-K6-BYd" userLabel="ContentView">
-                                        <rect key="frame" x="9" y="0.0" width="314" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="1200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mgz-Pe-Ld1">
-                                                <rect key="frame" x="20" y="50" width="274" height="1100"/>
+                                                <rect key="frame" x="20" y="50" width="300" height="1100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REn-gG-aTG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="MIN HÄRLIGA SEMESTER" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-ti-uDt">
-                                                        <rect key="frame" x="0.0" y="110" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="110" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="FÖRLÅT MIG, ETT BREV" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sorrychoice:" destination="fEz-uI-AWU" eventType="touchUpInside" id="rKv-wh-sAn"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMe-t8-2fy">
-                                                        <rect key="frame" x="0.0" y="220" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="220" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="VILL DU GIFTA DIG MED MIG?" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="marrychoice:" destination="fEz-uI-AWU" eventType="touchUpInside" id="vnV-C6-lie"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuv-8T-gH3">
-                                                        <rect key="frame" x="0.0" y="330" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="330" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="GREVENS NYA HEM" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="homechoice:" destination="fEz-uI-AWU" eventType="touchUpInside" id="tws-Jh-XM9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-tV-NpB">
-                                                        <rect key="frame" x="0.0" y="440" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="440" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL8-eY-d0S">
-                                                        <rect key="frame" x="0.0" y="550" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="550" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-hT-F9b">
-                                                        <rect key="frame" x="0.0" y="660" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="660" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-oX-iTV">
-                                                        <rect key="frame" x="0.0" y="770" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="770" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5e-7E-itv">
-                                                        <rect key="frame" x="0.0" y="880" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="880" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAz-RS-1VA">
-                                                        <rect key="frame" x="0.0" y="990" width="274" height="110"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonyellow"/>
+                                                        <rect key="frame" x="0.0" y="990" width="300" height="110"/>
+                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
+                                                        <state key="normal" title="TESTKNAPP" backgroundImage="buttonorange">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="test:" destination="fEz-uI-AWU" eventType="touchUpInside" id="t8C-hH-mHj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
+                                            <constraint firstItem="mgz-Pe-Ld1" firstAttribute="centerX" secondItem="bsL-K6-BYd" secondAttribute="centerX" id="FAm-Zg-1MX"/>
                                             <constraint firstItem="mgz-Pe-Ld1" firstAttribute="top" secondItem="bsL-K6-BYd" secondAttribute="top" constant="50" id="N2K-tC-MxX"/>
                                             <constraint firstItem="mgz-Pe-Ld1" firstAttribute="leading" secondItem="bsL-K6-BYd" secondAttribute="leading" constant="20" id="T8e-r2-pd6"/>
                                             <constraint firstAttribute="height" constant="1200" id="fia-s2-57L"/>
@@ -84,24 +127,47 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="top" secondItem="hy6-Ls-oq2" secondAttribute="top" id="38D-uV-aSf"/>
-                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="width" secondItem="hy6-Ls-oq2" secondAttribute="width" id="6eR-oE-2rx"/>
-                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="leading" secondItem="hy6-Ls-oq2" secondAttribute="leading" constant="9" id="ebX-Ee-6UR"/>
-                                    <constraint firstAttribute="trailing" secondItem="bsL-K6-BYd" secondAttribute="trailing" id="pCA-D8-Fjg"/>
-                                    <constraint firstAttribute="bottom" secondItem="bsL-K6-BYd" secondAttribute="bottom" id="qcz-n8-7SF"/>
+                                    <constraint firstAttribute="trailing" secondItem="bsL-K6-BYd" secondAttribute="trailing" id="BSh-Qi-C3j"/>
+                                    <constraint firstAttribute="bottom" secondItem="bsL-K6-BYd" secondAttribute="bottom" id="DLS-Qw-Blh"/>
+                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="width" secondItem="hy6-Ls-oq2" secondAttribute="width" id="E7e-cI-khZ"/>
+                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="leading" secondItem="hy6-Ls-oq2" secondAttribute="leading" id="WYT-9c-D0g"/>
+                                    <constraint firstItem="bsL-K6-BYd" firstAttribute="top" secondItem="hy6-Ls-oq2" secondAttribute="top" id="tgh-TL-J4x"/>
                                 </constraints>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrolla för att se fler!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0N-TV-U2D">
+                                <rect key="frame" x="117" y="1040" width="180" height="27"/>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-zi-jac">
+                                <rect key="frame" x="121" y="1077" width="172" height="45"/>
+                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="25"/>
+                                <state key="normal" title="Tillbaka till start!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="fEz-uI-AWU" eventType="touchUpInside" id="Y6N-Bh-W8x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="myC-jL-tYk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hy6-Ls-oq2" secondAttribute="bottom" constant="400" id="HMt-Az-WjF"/>
-                            <constraint firstAttribute="trailing" secondItem="hy6-Ls-oq2" secondAttribute="trailing" constant="50" id="JAQ-xh-obb"/>
-                            <constraint firstItem="hy6-Ls-oq2" firstAttribute="leading" secondItem="myC-jL-tYk" secondAttribute="leading" constant="50" id="pH4-Yz-Wyx"/>
+                            <constraint firstItem="v0N-TV-U2D" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="DhZ-a4-DBH"/>
+                            <constraint firstAttribute="bottom" secondItem="hy6-Ls-oq2" secondAttribute="bottom" constant="200" id="HMt-Az-WjF"/>
+                            <constraint firstItem="v0N-TV-U2D" firstAttribute="top" secondItem="hy6-Ls-oq2" secondAttribute="bottom" constant="40" id="MYk-Vc-9a3"/>
+                            <constraint firstItem="Shp-zi-jac" firstAttribute="top" secondItem="v0N-TV-U2D" secondAttribute="bottom" constant="10" id="aJf-FG-Sd3"/>
+                            <constraint firstItem="hy6-Ls-oq2" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="dWQ-eH-hOD"/>
+                            <constraint firstItem="Shp-zi-jac" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="sBV-km-Yrr"/>
                             <constraint firstItem="hy6-Ls-oq2" firstAttribute="top" secondItem="myC-jL-tYk" secondAttribute="top" id="vke-o4-QcO"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <segue destination="Noe-b0-lJb" kind="presentation" identifier="storychosen" modalPresentationStyle="fullScreen" id="fTs-I1-xYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwG-ja-nXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,9 +305,11 @@
             <point key="canvasLocation" x="946" y="96"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fTs-I1-xYk"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="buttonorange" width="300" height="100"/>
-        <image name="buttonyellow" width="300" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

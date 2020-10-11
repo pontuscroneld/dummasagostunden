@@ -13,6 +13,8 @@ class StoryView: UIViewController {
     @IBOutlet weak var Textfield: UITextField!
     @IBOutlet weak var Neededword: UILabel!
     
+    @IBOutlet weak var explainview: UIView!
+    
     var playerwords = [String]()
     var typewords = [String]()
     var index = 0
@@ -75,6 +77,13 @@ class StoryView: UIViewController {
                          "ett adjektiv som slutar på a","ett djur som inte finns", "något man kan äta",
                          "en sak plural", "ett adjektiv", "en affär", "verb som slutar på A",
                          "ett adjektiv som slutar på A"]
+            
+         
+            }
+        
+        if(choice == "test" ){
+            typewords = ["en siffra", "ett namn", "en färg"]
+        
         }
         
         progressrate = Progress(totalUnitCount: Int64(typewords.count))
@@ -93,6 +102,17 @@ class StoryView: UIViewController {
         
         
     }
+    
+    
+    @IBAction func showexplain(_ sender: Any) {
+        
+        if(explainview.isHidden == true){
+            explainview.isHidden = false}
+        else{ explainview.isHidden = true
+        }
+            
+    }
+    
     
     
     @IBAction func addword(_ sender: Any) {

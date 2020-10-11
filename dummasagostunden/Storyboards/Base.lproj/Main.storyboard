@@ -99,20 +99,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-JD-DdA">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-JD-DdA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv ditt ord här!" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xME-K9-1vX">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv ditt ord här!" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xME-K9-1vX">
                                         <rect key="frame" x="57" y="413" width="300" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="FQg-hQ-W1K">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
-                                            </constraint>
-                                            <constraint firstAttribute="height" constant="70" id="b1i-56-DYm">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
-                                            </constraint>
-                                        </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -120,11 +113,13 @@
                                             <action selector="addword:" destination="C14-6i-1no" eventType="primaryActionTriggered" id="aYC-Rj-Eqt"/>
                                         </connections>
                                     </textField>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
                                         <rect key="frame" x="57" y="226" width="300" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilket ord behöver jag?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lm-8mz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vilket ord behöver jag?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lm-8mz">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,57 +130,72 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="4Ex-PM-XO6"/>
-                                            <constraint firstAttribute="trailing" secondItem="VfF-Lm-8mz" secondAttribute="trailing" id="ETA-Wx-P39"/>
-                                            <constraint firstItem="VfF-Lm-8mz" firstAttribute="leading" secondItem="Wv0-4N-OKD" secondAttribute="leading" id="Lba-Xu-pcN"/>
-                                            <constraint firstAttribute="bottom" secondItem="VfF-Lm-8mz" secondAttribute="bottom" id="o9d-ae-gZO"/>
-                                            <constraint firstItem="VfF-Lm-8mz" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="top" id="u2A-UB-nEZ"/>
-                                        </constraints>
                                     </view>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7So-YG-nJR">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7So-YG-nJR">
                                         <rect key="frame" x="57" y="547" width="300" height="10"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="10" id="ufA-pA-vHl"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="trackTintColor" red="0.18013932387105883" green="0.16171038580813857" blue="0.44189155136321234" alpha="0.56258252639999995" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPi-Wa-TMW">
+                                        <rect key="frame" x="75" y="646" width="264" height="200"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGM-3s-51d">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="200"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-v5-OaB">
+                                                        <rect key="frame" x="0.0" y="600" width="264" height="800"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="F4e-87-cxz"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="XOR-04-e6V"/>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="EGM-3s-51d" firstAttribute="top" secondItem="RPi-Wa-TMW" secondAttribute="top" id="9IA-gx-Bqk"/>
+                                            <constraint firstAttribute="bottom" secondItem="EGM-3s-51d" secondAttribute="bottom" id="GHg-r2-fsy"/>
+                                            <constraint firstAttribute="trailing" secondItem="EGM-3s-51d" secondAttribute="trailing" id="udu-bw-19a"/>
+                                            <constraint firstItem="EGM-3s-51d" firstAttribute="leading" secondItem="RPi-Wa-TMW" secondAttribute="leading" id="zDy-yK-FvQ"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfF-bk-lQ1">
+                                        <rect key="frame" x="189.5" y="602" width="35" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                        <state key="normal" title="Show">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showexplain:" destination="C14-6i-1no" eventType="touchUpInside" id="LYl-Ed-lII"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="7So-YG-nJR" firstAttribute="width" secondItem="xME-K9-1vX" secondAttribute="width" id="1TM-2o-fLW"/>
-                                    <constraint firstAttribute="trailing" secondItem="Wv0-4N-OKD" secondAttribute="trailing" constant="57" id="Jq3-52-oTk"/>
-                                    <constraint firstItem="xME-K9-1vX" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="SsG-h4-nZW"/>
-                                    <constraint firstItem="Wv0-4N-OKD" firstAttribute="leading" secondItem="A7j-JD-DdA" secondAttribute="leading" constant="57" id="Tfn-Xh-8c2"/>
-                                    <constraint firstItem="7So-YG-nJR" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="hyU-KU-jbA"/>
-                                    <constraint firstItem="7So-YG-nJR" firstAttribute="top" secondItem="xME-K9-1vX" secondAttribute="bottom" constant="64" id="iD5-bb-s1f"/>
-                                    <constraint firstItem="xME-K9-1vX" firstAttribute="centerY" secondItem="A7j-JD-DdA" secondAttribute="centerY" id="m2l-hy-Tb1"/>
-                                    <constraint firstItem="xME-K9-1vX" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="bottom" constant="37" id="okB-5B-uGj"/>
+                                    <constraint firstAttribute="bottom" secondItem="RPi-Wa-TMW" secondAttribute="bottom" constant="50" id="kOS-3A-0pk"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ROM-U5-7dJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="A7j-JD-DdA" firstAttribute="trailing" secondItem="ROM-U5-7dJ" secondAttribute="trailing" id="7Ft-8D-fG8"/>
-                            <constraint firstItem="A7j-JD-DdA" firstAttribute="leading" secondItem="ROM-U5-7dJ" secondAttribute="leading" id="K1D-nk-nEc"/>
-                            <constraint firstAttribute="bottom" secondItem="A7j-JD-DdA" secondAttribute="bottom" id="VRH-2N-mcT"/>
-                            <constraint firstItem="A7j-JD-DdA" firstAttribute="top" secondItem="IaL-YA-khd" secondAttribute="top" id="n8t-VS-jSx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hxU-nU-eLG"/>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="Neededword" destination="VfF-Lm-8mz" id="14j-EM-obT"/>
                         <outlet property="Textfield" destination="xME-K9-1vX" id="yyI-Lv-ude"/>
+                        <outlet property="explainview" destination="RPi-Wa-TMW" id="Kjq-Ao-gbF"/>
                         <outlet property="progressview" destination="7So-YG-nJR" id="81d-1T-jpx"/>
                         <segue destination="mu1-HI-kl8" kind="modal" identifier="readstory" modalPresentationStyle="fullScreen" id="eXf-K2-Xca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOf-tc-BVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17959" y="1501"/>
+            <point key="canvasLocation" x="-17959.420289855072" y="1500.6696428571429"/>
         </scene>
         <!--ReadLoud-->
         <scene sceneID="oEU-1d-GbE">
