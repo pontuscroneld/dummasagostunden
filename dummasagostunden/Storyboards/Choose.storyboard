@@ -31,14 +31,14 @@
                                                 <rect key="frame" x="20" y="50" width="300" height="1100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REn-gG-aTG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="MIN HÄRLIGA SEMESTER" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-ti-uDt">
-                                                        <rect key="frame" x="0.0" y="110" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="137.5" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="FÖRLÅT MIG, ETT BREV" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +48,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMe-t8-2fy">
-                                                        <rect key="frame" x="0.0" y="220" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="275" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="VILL DU GIFTA DIG MED MIG?" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +58,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuv-8T-gH3">
-                                                        <rect key="frame" x="0.0" y="330" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="412.5" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="GREVENS NYA HEM" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +68,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-tV-NpB">
-                                                        <rect key="frame" x="0.0" y="440" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="550" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="NATIONALSÅNGEN" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +78,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL8-eY-d0S">
-                                                        <rect key="frame" x="0.0" y="550" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="687.5" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="EN JOBBANSÖKAN" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +88,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-hT-F9b">
-                                                        <rect key="frame" x="0.0" y="660" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="825" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
                                                         <state key="normal" title="KÄRA FRÖKEN" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,24 +97,10 @@
                                                             <action selector="teacher:" destination="fEz-uI-AWU" eventType="touchUpInside" id="mGW-DA-P6j"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-oX-iTV">
-                                                        <rect key="frame" x="0.0" y="770" width="300" height="110"/>
-                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
-                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5e-7E-itv">
-                                                        <rect key="frame" x="0.0" y="880" width="300" height="110"/>
-                                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
-                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAz-RS-1VA">
-                                                        <rect key="frame" x="0.0" y="990" width="300" height="110"/>
+                                                        <rect key="frame" x="0.0" y="962.5" width="300" height="137.5"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
-                                                        <state key="normal" title="TESTKNAPP" backgroundImage="buttonorange">
+                                                        <state key="normal" title="PROVA PÅ" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
