@@ -94,10 +94,15 @@ class StoryView: UIViewController {
             typewords = ["en hälsning", "ditt namn", "något man jobbar som", "en hemsida", "känslan du får innan backen i en berg-o-dalbana", "en kroppsdel, bestämd form", "ett klädesplagg, bestämd form", "ett ovanligt yrke", "något som regeringen borde satsa mer pengar på", "ett roligt ord för vilket kön du har", "din ålder", "ett ordspråk", "något annat man jobbar som", "en tid på dygnet", "ett sätt man kommunicerade på förr i tiden", "ett adjektiv du skulle använda för att beskriva julen"]
         }
         
+        if(choice == "teacher" ){
+            typewords = ["en grönsak", "djur i bestämd form och ägandeform, tex hundens eller kattens", "en tidsperiod", "ett adjektiv som beskriver den bästa filmen du sett", "något du äter till frukost", "ett fordon i bestämd form", "ett adjektiv som slutar på -t", "en preposition tex över, under, bredvid", "ett adjektiv som slutar på -t", "en sak som finns i skogen", "ett djur", "ett avstånd", "en tidsperiod", "något man sjunker ner i", "något som är långt och hårt", "ett verb som beskriver ett sätt att förstöra något"]
+            
+        
+        }
+        
         if(choice == "test" ){
             typewords = ["en siffra", "ett namn", "en färg"]
             
-            typewords.append("något som rimmar på" + rhyme1)
         
         }
         

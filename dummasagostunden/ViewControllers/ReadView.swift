@@ -45,6 +45,10 @@ class ReadView: UIViewController {
 
         }
         
+        if(story == "teacher"){
+            thestory.text = "Kära Fröken \(storywords[0]). Som du vet är det sista inlämning på uppsatsen om \(storywords[1]) historia idag. Jag undrar om jag skulle kunna få \(storywords[2]) till på mig för att lämna in uppgiften. Det är nämligen så att jag skrev färdigt uppsatsen igår och la den i min skolväska. Den var \(storywords[3]), det ska du veta. Imorse vaknade jag sent och hann precis göra en \(storywords[4]) som jag la ner i min väska innan jag sprang till \(storywords[5]). Tyvärr så hade jag gjort ett \(storywords[6]) misstag och glömt knyta mina skosnören. Jag snubblade på ett skosnöre på väg till \(storywords[5]) och föll ner i diket \(storywords[7]) vägen. Eftersom det regnade så \(storywords[8]) igår var det en kraftig ström som drog med mig ut i skogen där jag till slut fick tag i en \(storywords[9]) och drog mig upp. Jag gick runt vilse en stund innan jag satte mig på en stock för att äta min frukost. Då kom en \(storywords[10]) som känt doften av min \(storywords[4]) och jagade mig upp i ett träd. Ena remmen till ryggsäcken gick sönder och uppsatsen flög iväg och landade på marken \(storywords[11]) bort. Efter \(storywords[12]) var det säkert att klättra ner men pappret hade landat i \(storywords[13]) och jag började sjunka! Med hjälp av en \(storywords[14]) lyckades jag både komma upp igen och nå läxan men nu hade jag gjort ett stort hål mitt i pappret. Uppsatsen går inte längre att läsa så jag var tvungen att \(storywords[15]) den. Så jag undrar, kan jag få \(storywords[2]) till?"
+        }
+        
         if(story == "test"){
             thestory.text = "Jag har \(storywords[0]) hundar. Min favorit heter \(storywords[1]). Men jag tycker tyvärr inte om att den är \(storywords[2]). Den är nog inte min favorit ändå."
         }

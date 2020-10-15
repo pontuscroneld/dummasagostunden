@@ -54,6 +54,11 @@ class Try2VC: UIViewController {
     }
     
     
+    @IBAction func teacher(_ sender: Any) {
+        thechoice = "teacher"
+        segue()
+    }
+    
     
     @IBAction func test(_ sender: Any) {
         thechoice = "test"
