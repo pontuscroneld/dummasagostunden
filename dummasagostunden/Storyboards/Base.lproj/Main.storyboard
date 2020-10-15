@@ -107,7 +107,9 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="M4B-Ie-X1x"/>
-                                            <constraint firstAttribute="width" constant="250" id="tjP-H3-Bdq"/>
+                                            <constraint firstAttribute="width" constant="250" id="tjP-H3-Bdq">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                            </constraint>
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
@@ -181,10 +183,10 @@
                                             <constraint firstItem="EGM-3s-51d" firstAttribute="leading" secondItem="RPi-Wa-TMW" secondAttribute="leading" id="zDy-yK-FvQ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfF-bk-lQ1">
-                                        <rect key="frame" x="189.5" y="602" width="35" height="34"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfF-bk-lQ1">
+                                        <rect key="frame" x="148" y="602" width="118" height="34"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                        <state key="normal" title="Show">
+                                        <state key="normal" title="Vad betyder det?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

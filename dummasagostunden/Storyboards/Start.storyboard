@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y2K-AO-gob">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -28,17 +28,17 @@
             <objects>
                 <viewController id="Y2K-AO-gob" customClass="StartView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H31-bh-6IW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-Uh-lE5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o0Y-cg-mqZ">
-                                        <rect key="frame" x="57" y="431" width="300" height="300"/>
+                                        <rect key="frame" x="184" y="545" width="400" height="300"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="67o-tJ-Zob">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="25"/>
                                                 <state key="normal" title="VÄLJ EN HISTORIA!" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,7 +49,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-LN-wVg">
-                                                <rect key="frame" x="0.0" y="100" width="300" height="100"/>
+                                                <rect key="frame" x="0.0" y="100" width="400" height="100"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="25"/>
                                                 <state key="normal" title="BLI EN STORYTAJMER!" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,7 +59,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4D-33-A2X">
-                                                <rect key="frame" x="0.0" y="200" width="300" height="100"/>
+                                                <rect key="frame" x="0.0" y="200" width="400" height="100"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="23"/>
                                                 <state key="normal" title="VILL DU VETA MER?" backgroundImage="buttonorange">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,7 +77,7 @@
                                         </constraints>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajm" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-Vd-xUv">
-                                        <rect key="frame" x="8" y="81" width="396" height="350"/>
+                                        <rect key="frame" x="8" y="95" width="750" height="450"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="350" id="lT9-R4-6fQ">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="450"/>
@@ -118,11 +118,11 @@
             <objects>
                 <viewController title="About" id="6gR-rX-BvO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qpg-yw-73s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILL DU VETA MER?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-jZ-5F0">
-                                <rect key="frame" x="122" y="41" width="170.5" height="28.5"/>
+                                <rect key="frame" x="243.5" y="80" width="217" height="36"/>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -131,7 +131,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
-                                <rect key="frame" x="50" y="89.5" width="314" height="390"/>
+                                <rect key="frame" x="102" y="136" width="500" height="390"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="Fwt-yi-dqc">
                                         <variation key="heightClass=regular-widthClass=regular" constant="500"/>
@@ -149,7 +149,7 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-00-hX5">
-                                <rect key="frame" x="114.5" y="509.5" width="185" height="177"/>
+                                <rect key="frame" x="259.5" y="556" width="185" height="177"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="GT7-A1-i40"/>
@@ -181,11 +181,11 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
             <objects>
                 <viewController title="Author" id="CLr-i2-AO1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k36-MJ-kPc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Sq-4gi">
-                                <rect key="frame" x="50" y="101" width="314" height="473"/>
+                                <rect key="frame" x="102" y="120" width="500" height="473"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="Sxo-6H-OE1">
                                         <variation key="heightClass=regular-widthClass=regular" constant="500"/>
@@ -203,7 +203,7 @@ Storytajm förbehåller sig rätten att använda, redigera och omformulera alla 
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLI EN STORYTAJMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-k3-ZTB">
-                                <rect key="frame" x="100" y="41" width="214" height="29"/>
+                                <rect key="frame" x="227" y="60" width="250" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="ANJ-pm-BfP"/>
                                     <constraint firstAttribute="width" constant="214" id="sx2-Xb-4kH">
@@ -218,7 +218,7 @@ Storytajm förbehåller sig rätten att använda, redigera och omformulera alla 
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-oF-RLT">
-                                <rect key="frame" x="120.5" y="582" width="173" height="159"/>
+                                <rect key="frame" x="265.5" y="601" width="173" height="159"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="HkY-sL-cHQ"/>
