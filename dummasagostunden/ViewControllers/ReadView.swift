@@ -35,6 +35,11 @@ class ReadView: UIViewController {
             thestory.text = "Greven \(storywords[0]) bor i landet \(storywords[1]). Har du aldrig hört talas om det? Det ligger bara \(storywords[2])s färd ifrån \(storywords[3]), som jag förmodar att du känner till. Greven vann alldeles nyligen \(storywords[4]) kronor på lotto och för dom pengarna ska han bygga ett nytt slott. Han har allt planerat allt in i minsta detalj. Föreställ er en \(storywords[5]) port som leder in i byggnaden, omringat av tusen \(storywords[6]). Hallen har ett golv av marmor och väggarna är gjorda av \(storywords[7]). På den \(storywords[8]) våningen ligger hans sovrum med utsikt över den \(storywords[9]) skogen. Där sägs finnas både vilda \(storywords[10]) och en \(storywords[11]) som ger en kraften att förstå \(storywords[12]) och all makt som det innebär. Greven är en vänlig man, men han längtar efter \(storywords[13]) kärlek. Har han tur kanske han träffar någon redan imorgon på \(storywords[14]) när han handlar något att \(storywords[15]) med i sitt nya hem. Sitt nya, \(storywords[16]) hem."
         }
         
+        if(story == "anthem"){
+            thestory.text = "Du gamla du fria du \(storywords[0]) nord. Du tysta du glädjerika \(storywords[1]). Jag \(storywords[3]) dig \(storywords[4]) land uppå jord. Din sol, din himmel, dina \(storywords[5]) \(storywords[2]). Din sol, din himmel, dina \(storywords[5]) \(storywords[2])! Du \(storywords[6]) på \(storywords[7]) från \(storywords[8]) dar. Då ärat ditt namn flög över \(storywords[10]). Jag vet \(storywords[11]) du är, och du blir \(storywords[12]) du var. Ja jag vill \(storywords[13]), jag vill \(storywords[14]) i \(storywords[9]). Ja jag vill \(storywords[13]), jag vill \(storywords[14]) i \(storywords[9])!"
+
+        }
+        
         if(story == "test"){
             thestory.text = "Jag har \(storywords[0]) hundar. Min favorit heter \(storywords[1]). Men jag tycker tyvärr inte om att den är \(storywords[2]). Den är nog inte min favorit ändå."
         }

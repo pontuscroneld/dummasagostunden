@@ -17,6 +17,8 @@ class StoryView: UIViewController {
     
     var playerwords = [String]()
     var typewords = [String]()
+    var rhyme1 = ""
+    var rhyme2 = ""
     var index = 0
     
     var choice = ""
@@ -45,6 +47,7 @@ class StoryView: UIViewController {
         playerwords.removeAll()
         typewords.removeAll()
         index = 0
+       
         
         
 
@@ -81,8 +84,16 @@ class StoryView: UIViewController {
          
             }
         
+        if(choice == "anthem"){
+            typewords = ["adjektiv plural", "ett annat adjektiv plural", "ett adjektiv som rimmar på det förra", "ett verb som slutar på -ar, eller -er", "ett adjektiv superlativ", "något som finns i naturen, plural", "ett verb som slutar på -ar eller -er", "något som fanns förr, plural", "en synonym till gamla", "platsen där du bor", "en plats som rimmar på det", "ett frågeord (var, hur, när, varför)", "ett annat frågeord", "ett verb som slutar på -a", "ett verb som är motsatsen av det förra ordet, slutar också på -a"]
+         
+            
+        }
+        
         if(choice == "test" ){
             typewords = ["en siffra", "ett namn", "en färg"]
+            
+            typewords.append("något som rimmar på" + rhyme1)
         
         }
         

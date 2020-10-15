@@ -43,6 +43,12 @@ class Try2VC: UIViewController {
     }
     
     
+    @IBAction func anthemchoice(_ sender: Any) {
+        thechoice = "anthem"
+        segue()
+    }
+    
+    
     @IBAction func test(_ sender: Any) {
         thechoice = "test"
         segue()
