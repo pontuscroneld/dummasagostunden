@@ -40,6 +40,11 @@ class ReadView: UIViewController {
 
         }
         
+        if(story == "work"){
+            thestory.text = "\(storywords[0])! Jag heter \(storywords[1]) och jag skriver angående tjänsten som \(storywords[2]) hos er. Jag såg er annons på \(storywords[3]) och kände mig direkt \(storywords[4]). Jag är på jakt efter ett jobb och jag tror att jag hade passat in hos er som \(storywords[5]) i \(storywords[6]). Jag är utbildad \(storywords[7]), med många års erfarenhet inom \(storywords[8]). För att beskriva vem jag är: Jag är en glad och energisk \(storywords[9]) på \(storywords[10]) jordsnurr. Jag är ansvarsfull och positiv och lever efter orden: \(storywords[11]) som min \(storywords[12]) alltid sa. Jag ser fram emot ett personligt möte där jag även kan få lära känna er bättre. Jag är tillgänglig alla vardagar runt \(storywords[13]) och ni kan nå mig på telefon och mail men allra helst genom \(storywords[14]). Det funkar bäst för mig. Jag önskar er en \(storywords[15]) dag! Med vänliga hälsningar, \(storywords[1]), er nästa \(storywords[2])."
+
+        }
+        
         if(story == "test"){
             thestory.text = "Jag har \(storywords[0]) hundar. Min favorit heter \(storywords[1]). Men jag tycker tyvärr inte om att den är \(storywords[2]). Den är nog inte min favorit ändå."
         }

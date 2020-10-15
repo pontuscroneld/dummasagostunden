@@ -90,6 +90,10 @@ class StoryView: UIViewController {
             
         }
         
+        if(choice == "work" ){
+            typewords = ["en hälsning", "ditt namn", "något man jobbar som", "en hemsida", "känslan du får innan backen i en berg-o-dalbana", "en kroppsdel, bestämd form", "ett klädesplagg, bestämd form", "ett ovanligt yrke", "något som regeringen borde satsa mer pengar på", "ett roligt ord för vilket kön du har", "din ålder", "ett ordspråk", "något annat man jobbar som", "en tid på dygnet", "ett sätt man kommunicerade på förr i tiden", "ett adjektiv du skulle använda för att beskriva julen"]
+        }
+        
         if(choice == "test" ){
             typewords = ["en siffra", "ett namn", "en färg"]
             

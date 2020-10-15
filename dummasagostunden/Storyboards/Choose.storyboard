@@ -80,9 +80,12 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL8-eY-d0S">
                                                         <rect key="frame" x="0.0" y="550" width="300" height="110"/>
                                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="20"/>
-                                                        <state key="normal" title="Button" backgroundImage="buttonorange">
+                                                        <state key="normal" title="EN JOBBANSÖKAN" backgroundImage="buttonorange">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="workchoice:" destination="fEz-uI-AWU" eventType="touchUpInside" id="CAH-bH-AyH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-hT-F9b">
                                                         <rect key="frame" x="0.0" y="660" width="300" height="110"/>
