@@ -26,7 +26,10 @@ class StoryView: UIViewController {
     
     @IBOutlet weak var progressview: UIProgressView!
   
-    
+    var myMutableStringTitle = NSMutableAttributedString()
+    let Name  = "Enter Title" // PlaceHolderText
+
+   
     
     
     
@@ -48,6 +51,7 @@ class StoryView: UIViewController {
         typewords.removeAll()
         index = 0
        
+        Textfield.attributedPlaceholder = NSAttributedString(string:"Skriv ditt ord här!", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
         
 
