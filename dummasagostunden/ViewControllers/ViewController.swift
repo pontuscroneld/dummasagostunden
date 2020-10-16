@@ -127,6 +127,9 @@ class ViewController: UIViewController {
 
    
     
+    @IBAction func mutebutton(_ sender: Any) {
+        MusicPlayer.shared.pausemusic()
+        }
     
     
            

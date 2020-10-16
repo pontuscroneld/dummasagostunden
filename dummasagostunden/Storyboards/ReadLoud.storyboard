@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZcD-Pq-hXL">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,6 +49,20 @@
                                             <action selector="startover:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="1Pf-xn-Rzz"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-t9-kar">
+                                        <rect key="frame" x="688" y="30" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="bor-79-ql3"/>
+                                            <constraint firstAttribute="height" constant="40" id="yCY-z9-WfV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="Muteknapp2" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mutebutton:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="CiF-gH-wIQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
@@ -57,7 +73,9 @@
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="60" id="QYp-uL-fNc"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="YUd-lA-29G"/>
                                     <constraint firstItem="NPN-Ul-L4l" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="Ywc-Xo-OYO"/>
+                                    <constraint firstItem="Uza-t9-kar" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="30" id="lYi-Nk-Q73"/>
                                     <constraint firstAttribute="bottom" secondItem="NPN-Ul-L4l" secondAttribute="bottom" constant="30" id="u3t-Ul-gId"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uza-t9-kar" secondAttribute="trailing" constant="40" id="y92-FP-2yL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -91,6 +109,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Muteknapp2" width="500" height="500"/>
         <image name="buttonorange" width="300" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

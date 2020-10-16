@@ -21,34 +21,24 @@ class StartView: UIViewController {
         super.viewDidLoad()
     
         MusicPlayer.shared.startBackgroundMusic()
-        MusicPlayer.shared.audioPlayer?.volume = 0.1
         // Do any additional setup after loading the view.
        
     }
     
     @IBAction func buttonstart(_ sender: Any) {
-        MusicPlayer.shared.buttonsound()
+        //MusicPlayer.shared.buttonsound()
         //Skickas till ChooseView
         
         
     }
     
     @IBAction func mutebutton(_ sender: Any) {
-        if(musicisplaying == true){
-            MusicPlayer.shared.audioPlayer?.stop()
-            musicisplaying = false
-        }
-        else{
-            MusicPlayer.shared.startBackgroundMusic()
-            musicisplaying = true
+        MusicPlayer.shared.pausemusic()
         }
         
-    }
-    
-    @IBAction func button(_ sender: Any) {
-        
-        MusicPlayer.shared.buttonsound()
-    }
-    
-    
 }
+    
+   
+    
+    
+

@@ -72,10 +72,13 @@ class ReadView: UIViewController {
     @IBAction func startover(_ sender: Any) {
         
        spk.stopSpeaking(at: AVSpeechBoundary.immediate)
-        MusicPlayer.shared.audioPlayer?.volume = 0.6
+        MusicPlayer.shared.audioPlayer?.volume = 0.1
         
         presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
         
     }
     
+    @IBAction func mutebutton(_ sender: Any) {
+        MusicPlayer.shared.pausemusic()
+        }
 }

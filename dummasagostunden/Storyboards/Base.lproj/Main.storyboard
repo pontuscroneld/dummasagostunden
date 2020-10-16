@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -204,10 +205,25 @@
                                             <action selector="showexplain:" destination="C14-6i-1no" eventType="touchUpInside" id="LYl-Ed-lII"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ut-j6-H2C">
+                                        <rect key="frame" x="344" y="40" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Z5Y-7j-1qW"/>
+                                            <constraint firstAttribute="height" constant="40" id="yvy-0D-BPX"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="Muteknapp2" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mutebutton:" destination="keS-Pg-yjE" eventType="touchUpInside" id="oj0-Ec-gBV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2ut-j6-H2C" secondAttribute="trailing" constant="30" id="0yd-nb-Ne9"/>
                                     <constraint firstItem="7So-YG-nJR" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="D4x-hq-Pog"/>
                                     <constraint firstItem="RPi-Wa-TMW" firstAttribute="top" secondItem="rfF-bk-lQ1" secondAttribute="bottom" constant="10" id="Ezx-8Y-n7I"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerY" secondItem="A7j-JD-DdA" secondAttribute="centerY" id="MrQ-ns-rje"/>
@@ -218,6 +234,7 @@
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="centerX" secondItem="A7j-JD-DdA" secondAttribute="centerX" id="eRz-Zq-eaT"/>
                                     <constraint firstAttribute="bottom" secondItem="RPi-Wa-TMW" secondAttribute="bottom" constant="50" id="f5m-TK-qIC"/>
                                     <constraint firstItem="7So-YG-nJR" firstAttribute="width" secondItem="xME-K9-1vX" secondAttribute="width" id="gwO-Mg-0YN"/>
+                                    <constraint firstItem="2ut-j6-H2C" firstAttribute="top" secondItem="A7j-JD-DdA" secondAttribute="top" constant="40" id="lfs-Uy-7wg"/>
                                     <constraint firstAttribute="trailing" secondItem="Wv0-4N-OKD" secondAttribute="trailing" constant="57" id="pPG-4O-KFi"/>
                                     <constraint firstItem="xME-K9-1vX" firstAttribute="top" secondItem="Wv0-4N-OKD" secondAttribute="bottom" constant="37" id="yB4-ZU-tL6"/>
                                 </constraints>
@@ -249,6 +266,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOf-tc-BVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="keS-Pg-yjE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-17959.420289855072" y="1500.6696428571429"/>
         </scene>
@@ -264,6 +282,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Muteknapp2" width="500" height="500"/>
         <namedColor name="BlackColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

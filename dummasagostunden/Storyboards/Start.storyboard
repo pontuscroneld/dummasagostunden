@@ -100,27 +100,16 @@
                                             <action selector="mutebutton:" destination="Y2K-AO-gob" eventType="touchUpInside" id="Y1K-p5-gJO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO8-gw-pbD">
-                                        <rect key="frame" x="184" y="789" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="button:" destination="Y2K-AO-gob" eventType="touchUpInside" id="T3x-t9-nm4"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="nO8-gw-pbD" secondAttribute="trailing" constant="184" id="I5n-La-1Y7"/>
-                                    <constraint firstItem="nO8-gw-pbD" firstAttribute="top" secondItem="o0Y-cg-mqZ" secondAttribute="bottom" constant="73" id="Rjo-X6-Ba1"/>
                                     <constraint firstItem="o0Y-cg-mqZ" firstAttribute="top" secondItem="zOh-Vd-xUv" secondAttribute="bottom" id="TZt-Ry-XSh"/>
                                     <constraint firstAttribute="trailing" secondItem="Hd6-dm-jto" secondAttribute="trailing" constant="30" id="U2q-SW-orv"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="width" secondItem="iPe-Uh-lE5" secondAttribute="width" constant="-18" id="WUb-xw-XaH"/>
-                                    <constraint firstItem="nO8-gw-pbD" firstAttribute="leading" secondItem="iPe-Uh-lE5" secondAttribute="leading" constant="184" id="ays-bE-brr"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="centerX" secondItem="iPe-Uh-lE5" secondAttribute="centerX" constant="-1" id="b2g-fw-pGX"/>
                                     <constraint firstItem="o0Y-cg-mqZ" firstAttribute="centerX" secondItem="iPe-Uh-lE5" secondAttribute="centerX" id="dBc-eJ-UdV"/>
                                     <constraint firstItem="Hd6-dm-jto" firstAttribute="top" secondItem="iPe-Uh-lE5" secondAttribute="top" constant="40" id="qcf-tp-RbA"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="centerY" secondItem="iPe-Uh-lE5" secondAttribute="centerY" constant="-192" id="yn6-xv-IjN"/>
-                                    <constraint firstAttribute="bottom" secondItem="nO8-gw-pbD" secondAttribute="bottom" constant="77" id="zg0-nF-oMo"/>
                                 </constraints>
                             </view>
                         </subviews>

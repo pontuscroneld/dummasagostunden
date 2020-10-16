@@ -21,7 +21,7 @@ class Try2VC: UIViewController {
     
     @IBAction func holidaychoice(_ sender: Any) {
         thechoice = "holiday"
-        MusicPlayer.shared.buttonsound()
+        
         segue()
     
         
@@ -83,6 +83,12 @@ class Try2VC: UIViewController {
         presentingViewController?.dismiss(animated: true, completion: nil)
     
     
+    }
+    
+    
+    @IBAction func mutebutton(_ sender: Any) {
+        MusicPlayer.shared.pausemusic()
+        
     }
     
 }

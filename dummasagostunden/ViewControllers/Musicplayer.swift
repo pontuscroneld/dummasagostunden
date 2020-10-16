@@ -22,6 +22,7 @@ class MusicPlayer {
                         audioPlayer.numberOfLoops = -1
                         audioPlayer.prepareToPlay()
                         audioPlayer.play()
+                        MusicPlayer.shared.audioPlayer?.volume = 0.1
                         print("Music playing")
                         } catch {
                             print("error")
@@ -31,23 +32,34 @@ class MusicPlayer {
         }
     }
     
-    func buttonsound(){
-        if let bundle = Bundle.main.path(forResource: "Woosh", ofType: "mp3") {
-                    let Tap = NSURL(fileURLWithPath: bundle)
-                    do {
-                        
-                        audioPlayer = try AVAudioPlayer(contentsOf:Tap as URL)
-                        guard let audioPlayer = audioPlayer else { return }
-                        audioPlayer.prepareToPlay()
-                        audioPlayer.play()
-                        print("Button sound")
-                        } catch {
-                            print("error")
-                        }
-        
+    func pausemusic() {
+        if(audioPlayer!.isPlaying){
+            audioPlayer!.pause()
+            
+        }
+        else{
+            audioPlayer!.play()
+            
     }
     
-        
+   
     }
-
 }
+/*func buttonsound(){
+    if let bundle = Bundle.main.path(forResource: "Woosh", ofType: "mp3") {
+                let Tap = NSURL(fileURLWithPath: bundle)
+                do {
+                    
+                    audioPlayer = try AVAudioPlayer(contentsOf:Tap as URL)
+                    guard let audioPlayer = audioPlayer else { return }
+                    audioPlayer.play()
+                    print("Button sound")
+                    } catch {
+                        print("error")
+                    }
+    
+}
+
+    
+}
+*/
