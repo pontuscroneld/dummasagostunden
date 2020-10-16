@@ -19,10 +19,11 @@ class Try2VC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func holidaychoice(_ sender: Any) {
         thechoice = "holiday"
+        MusicPlayer.shared.buttonsound()
         segue()
+    
         
     }
     

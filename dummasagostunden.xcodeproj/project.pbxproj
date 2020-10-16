@@ -22,6 +22,9 @@
 		147520082513576200101FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147520062513576200101FF8 /* LaunchScreen.storyboard */; };
 		14752013251360E800101FF8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14752012251360E800101FF8 /* StoryView.swift */; };
 		14B53494251BDEFB00E91F41 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14B53493251BDEF600E91F41 /* Chewy-Regular.ttf */; };
+		14B5EE5F2539F302005FCDFE /* Musicplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B5EE5E2539F302005FCDFE /* Musicplayer.swift */; };
+		14B5EE632539F94E005FCDFE /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE622539F94E005FCDFE /* Music.mp3 */; };
+		14B5EE69253A08C5005FCDFE /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE68253A08C5005FCDFE /* Woosh.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		147520092513576200101FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14752012251360E800101FF8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		14B53493251BDEF600E91F41 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		14B5EE5E2539F302005FCDFE /* Musicplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicplayer.swift; sourceTree = "<group>"; };
+		14B5EE622539F94E005FCDFE /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music.mp3; path = Assets.xcassets/Music.dataset/Music.mp3; sourceTree = "<group>"; };
+		14B5EE68253A08C5005FCDFE /* Woosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Woosh.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		14361B75251CA91E0050C11E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				14B5EE68253A08C5005FCDFE /* Woosh.mp3 */,
+				14B5EE622539F94E005FCDFE /* Music.mp3 */,
 				14B53493251BDEF600E91F41 /* Chewy-Regular.ttf */,
 				147520042513576200101FF8 /* Assets.xcassets */,
 			);
@@ -116,6 +124,7 @@
 		14752014251360F100101FF8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				14B5EE5E2539F302005FCDFE /* Musicplayer.swift */,
 				14751FFF2513575F00101FF8 /* ViewController.swift */,
 				14752012251360E800101FF8 /* StoryView.swift */,
 				146A23B9251BB36E003BD169 /* StartView.swift */,
@@ -185,8 +194,10 @@
 			files = (
 				14B53494251BDEFB00E91F41 /* Chewy-Regular.ttf in Resources */,
 				14361B7D251CBCEC0050C11E /* ReadLoud.storyboard in Resources */,
+				14B5EE69253A08C5005FCDFE /* Woosh.mp3 in Resources */,
 				147520082513576200101FF8 /* LaunchScreen.storyboard in Resources */,
 				146A23B7251BB34C003BD169 /* Start.storyboard in Resources */,
+				14B5EE632539F94E005FCDFE /* Music.mp3 in Resources */,
 				147520052513576200101FF8 /* Assets.xcassets in Resources */,
 				147520032513575F00101FF8 /* Main.storyboard in Resources */,
 				14361B77251CA9650050C11E /* Choose.storyboard in Resources */,
@@ -205,6 +216,7 @@
 				14361B7A251CAC730050C11E /* ChooseView.swift in Sources */,
 				146A23BA251BB36E003BD169 /* StartView.swift in Sources */,
 				14361B80251CBD070050C11E /* ReadView.swift in Sources */,
+				14B5EE5F2539F302005FCDFE /* Musicplayer.swift in Sources */,
 				14751FFC2513575F00101FF8 /* AppDelegate.swift in Sources */,
 				14752013251360E800101FF8 /* StoryView.swift in Sources */,
 				14751FFE2513575F00101FF8 /* SceneDelegate.swift in Sources */,
@@ -357,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
