@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VILL DU VETA MER?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-jZ-5F0">
-                                <rect key="frame" x="104.5" y="41" width="205" height="26"/>
+                                <rect key="frame" x="122" y="41" width="170.5" height="28.5"/>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -150,16 +150,16 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gak-nW-l7g">
-                                <rect key="frame" x="50" y="87" width="314" height="390"/>
+                                <rect key="frame" x="50" y="89.5" width="314" height="390"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="Fwt-yi-dqc">
                                         <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="390" id="YRQ-Uu-8J9"/>
                                 </constraints>
-                                <string key="text">Inspirationen bakom appen Storytajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
+                                <mutableString key="text">Inspirationen bakom appen StoryTajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
 
-Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till storytajm@gmail.com . Vi svarar så fort vi har möjlighet!</string>
+Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till storytajm@gmail.com . Vi svarar så fort vi har möjlighet!</mutableString>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -168,7 +168,7 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstorytajmpurple" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-00-hX5">
-                                <rect key="frame" x="114.5" y="507" width="185" height="177"/>
+                                <rect key="frame" x="114.5" y="509.5" width="185" height="177"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="GT7-A1-i40"/>
@@ -211,9 +211,9 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                                     </constraint>
                                     <constraint firstAttribute="height" constant="473" id="UXK-nz-QCJ"/>
                                 </constraints>
-                                <string key="text">Vad kul att du tycker om Storytajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på storytajm@gmail.com och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
+                                <mutableString key="text">Vad kul att du tycker om StoryTajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på storytajm@gmail.com och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
 
-Storytajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</string>
+StoryTajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</mutableString>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
