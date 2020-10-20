@@ -152,7 +152,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ3-rt-Fqz">
-                                <rect key="frame" x="334" y="30" width="40" height="40"/>
+                                <rect key="frame" x="333" y="1130" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="83F-Kq-Flh"/>
                                     <constraint firstAttribute="height" constant="40" id="gfU-Tz-ZKB"/>
@@ -170,14 +170,14 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="v0N-TV-U2D" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="DhZ-a4-DBH"/>
+                            <constraint firstItem="myC-jL-tYk" firstAttribute="bottom" secondItem="uZ3-rt-Fqz" secondAttribute="bottom" constant="30" id="E8q-Pe-oTZ"/>
                             <constraint firstAttribute="bottom" secondItem="hy6-Ls-oq2" secondAttribute="bottom" constant="200" id="HMt-Az-WjF"/>
                             <constraint firstItem="v0N-TV-U2D" firstAttribute="top" secondItem="hy6-Ls-oq2" secondAttribute="bottom" constant="40" id="MYk-Vc-9a3"/>
                             <constraint firstItem="Shp-zi-jac" firstAttribute="top" secondItem="v0N-TV-U2D" secondAttribute="bottom" constant="10" id="aJf-FG-Sd3"/>
                             <constraint firstItem="hy6-Ls-oq2" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="dWQ-eH-hOD"/>
+                            <constraint firstItem="uZ3-rt-Fqz" firstAttribute="leading" secondItem="Shp-zi-jac" secondAttribute="trailing" constant="40" id="ghd-Jm-bUI"/>
                             <constraint firstItem="Shp-zi-jac" firstAttribute="centerX" secondItem="qBH-MX-f1g" secondAttribute="centerX" id="sBV-km-Yrr"/>
                             <constraint firstItem="hy6-Ls-oq2" firstAttribute="top" secondItem="myC-jL-tYk" secondAttribute="top" id="vke-o4-QcO"/>
-                            <constraint firstItem="uZ3-rt-Fqz" firstAttribute="top" secondItem="myC-jL-tYk" secondAttribute="top" constant="30" id="w7Y-fq-0Zr"/>
-                            <constraint firstItem="myC-jL-tYk" firstAttribute="trailing" secondItem="uZ3-rt-Fqz" secondAttribute="trailing" constant="40" id="xrw-qa-6lu"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1200"/>

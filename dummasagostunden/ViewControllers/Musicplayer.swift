@@ -22,7 +22,7 @@ class MusicPlayer {
                         audioPlayer.numberOfLoops = -1
                         audioPlayer.prepareToPlay()
                         audioPlayer.play()
-                        MusicPlayer.shared.audioPlayer?.volume = 0.1
+                        MusicPlayer.shared.audioPlayer?.volume = 0.5
                         print("Music playing")
                         } catch {
                             print("error")
