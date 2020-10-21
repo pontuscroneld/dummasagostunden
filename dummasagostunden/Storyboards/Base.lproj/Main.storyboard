@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C14-6i-1no">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -21,11 +21,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fyll i ditt ord här" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-jm-ClY">
-                                <rect key="frame" x="35" y="246.5" width="250" height="75"/>
+                                <rect key="frame" x="82" y="410.5" width="250" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="AAG-0t-bZG"/>
                                     <constraint firstAttribute="height" constant="75" id="xhs-33-bd8"/>
@@ -34,20 +34,20 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-Gs-OrV">
-                                <rect key="frame" x="133" y="341.5" width="54" height="30"/>
+                                <rect key="frame" x="180" y="505.5" width="54" height="30"/>
                                 <state key="normal" title="Lägg till"/>
                                 <connections>
                                     <action selector="addword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNz-4B-Hjh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iho-Ji-iQY">
-                                <rect key="frame" x="0.0" y="187.5" width="320" height="29"/>
+                                <rect key="frame" x="0.0" y="351.5" width="414" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT2-wC-7Kw">
-                                <rect key="frame" x="20" y="328" width="280" height="200"/>
+                                <rect key="frame" x="20" y="622" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="JKu-nJ-3Ur"/>
                                 </constraints>
@@ -57,7 +57,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-HH-rat">
-                                <rect key="frame" x="129.5" y="381.5" width="61" height="30"/>
+                                <rect key="frame" x="176.5" y="545.5" width="61" height="30"/>
                                 <state key="normal" title="Börja om"/>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbq-1h-Mac"/>
@@ -99,14 +99,14 @@
             <objects>
                 <viewController storyboardIdentifier="Storyboard" title="Story" id="C14-6i-1no" customClass="StoryView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaL-YA-khd" userLabel="Background Layer">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7j-JD-DdA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skriv ditt ord här!" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xME-K9-1vX">
-                                        <rect key="frame" x="35" y="246.5" width="250" height="75"/>
+                                        <rect key="frame" x="82" y="410.5" width="250" height="75"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="BlackColor"/>
                                         <constraints>
@@ -131,10 +131,10 @@
                                         </connections>
                                     </textField>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-4N-OKD">
-                                        <rect key="frame" x="57" y="59.5" width="206" height="150"/>
+                                        <rect key="frame" x="57" y="223.5" width="300" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vilket ord behöver jag?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfF-Lm-8mz">
-                                                <rect key="frame" x="0.0" y="0.0" width="206" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,12 +154,12 @@
                                         </constraints>
                                     </view>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7So-YG-nJR">
-                                        <rect key="frame" x="35" y="371.5" width="250" height="4"/>
+                                        <rect key="frame" x="82" y="535.5" width="250" height="4"/>
                                         <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="trackTintColor" red="0.18013932387105883" green="0.16171038580813857" blue="0.44189155136321234" alpha="0.56258252639999995" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfF-bk-lQ1">
-                                        <rect key="frame" x="101" y="435.5" width="118" height="34"/>
+                                        <rect key="frame" x="141.5" y="599.5" width="131" height="32"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                         <state key="normal" title="Vad betyder det?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ut-j6-H2C">
-                                        <rect key="frame" x="250" y="40" width="40" height="40"/>
+                                        <rect key="frame" x="344" y="40" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Z5Y-7j-1qW"/>
                                             <constraint firstAttribute="height" constant="40" id="yvy-0D-BPX"/>
@@ -183,7 +183,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOH-1j-5JQ">
-                                        <rect key="frame" x="241" y="504" width="49" height="34"/>
+                                        <rect key="frame" x="335" y="832" width="49" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="49" id="X8l-MV-Mey"/>
                                             <constraint firstAttribute="height" constant="34" id="dtR-gJ-NkE"/>
@@ -260,14 +260,14 @@
             <objects>
                 <viewController id="dEU-NT-Dvi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rng-2d-Oql">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="950"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="846"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjd-HL-fPK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="950"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="846"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcK-PW-BDZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="950"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="812"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4P-dq-k0k">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
@@ -330,7 +330,7 @@ Plats - en stad, ett land eller varför inte hela universum? Eller bara mataffä
                                 <constraints>
                                     <constraint firstItem="LcK-PW-BDZ" firstAttribute="leading" secondItem="pjd-HL-fPK" secondAttribute="leading" id="ZB7-ZO-0Vs"/>
                                     <constraint firstAttribute="trailing" secondItem="LcK-PW-BDZ" secondAttribute="trailing" id="bVS-vl-oR0"/>
-                                    <constraint firstAttribute="bottom" secondItem="LcK-PW-BDZ" secondAttribute="bottom" id="sFN-Cd-Ujf"/>
+                                    <constraint firstAttribute="bottom" secondItem="LcK-PW-BDZ" secondAttribute="bottom" constant="34" id="sFN-Cd-Ujf"/>
                                     <constraint firstItem="LcK-PW-BDZ" firstAttribute="top" secondItem="pjd-HL-fPK" secondAttribute="top" id="ynL-qP-NvV"/>
                                 </constraints>
                             </view>
@@ -340,37 +340,37 @@ Plats - en stad, ett land eller varför inte hela universum? Eller bara mataffä
                         <constraints>
                             <constraint firstItem="pjd-HL-fPK" firstAttribute="top" secondItem="n3o-Tg-Icw" secondAttribute="top" id="8mg-3b-Ort"/>
                             <constraint firstItem="pjd-HL-fPK" firstAttribute="leading" secondItem="n3o-Tg-Icw" secondAttribute="leading" id="AFC-uL-Pnc"/>
-                            <constraint firstItem="n3o-Tg-Icw" firstAttribute="bottom" secondItem="pjd-HL-fPK" secondAttribute="bottom" id="FDO-W7-7La"/>
+                            <constraint firstItem="n3o-Tg-Icw" firstAttribute="bottom" secondItem="pjd-HL-fPK" secondAttribute="bottom" constant="-34" id="FDO-W7-7La"/>
                             <constraint firstItem="n3o-Tg-Icw" firstAttribute="trailing" secondItem="pjd-HL-fPK" secondAttribute="trailing" id="TQt-z4-ln3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W6A-hz-hdl"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="970"/>
+                    <size key="freeformSize" width="320" height="900"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfS-yS-AYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17960.625" y="2328.1690140845071"/>
+            <point key="canvasLocation" x="-17960.869565217392" y="2327.6785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Yvv-QP-USy">
             <objects>
                 <viewController id="dZF-hk-XtO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EZV-sm-9Yc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-oc-Y3a" userLabel="Background Layer">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Förklaringar och ordklasser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv6-fd-InS">
-                                        <rect key="frame" x="50" y="60" width="220" height="28.5"/>
+                                        <rect key="frame" x="50" y="60" width="314" height="28.5"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2og-Qj-Fur">
-                                        <rect key="frame" x="30" y="128.5" width="260" height="600"/>
+                                        <rect key="frame" x="30" y="128.5" width="354" height="600"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="600" id="19J-dW-kjU"/>
                                         </constraints>
