@@ -58,48 +58,47 @@ class StoryView: UIViewController {
         //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
        
         if(choice == "holiday" ){
-            typewords = ["en tidsperiod", "en plats", "en påhittad karaktär", "ett efternamn", "ett djur", "ett adjektiv",
-                         "ett substantiv, bestämd form", "något man säger när man ska gå och bada", "klädesplagg plural",
-                         "en kroppsdel", "en annan kroppsdel, bestämd form", "en tidsperiod", "substantiv, plural",
-                         "ett adjektiv som slutar på t", "en högtid", "något man äter", "ett adjektiv"]
+            typewords = ["en tidsperiod", "en plats du aldrig har varit", "en påhittad karaktär", "ett efternamn", "ett ovanligt djur", "ett adjektiv",
+                         "en miljö som finns i naturen, bestämd form, tex ängen, havet eller vulkanen", "något man säger när man ska gå och bada", "ett klädesplagg plural",
+                         "en kroppsdel, tex hand", "en annan kroppsdel, bestämd form, tex handen", "en tidsperiod", "substantiv, plural",
+                         "ett adjektiv som slutar på t, tex blött", "en högtid", "något man äter", "känslan du får när du äntligen är klar med en StoryTajm"]
         }
         
         if(choice == "sorry" ){
-            typewords = ["ett namn du skulle ge till en hund", "ditt namn", "en kroppsdel", "adjektiv plural",
-                        "kroppsdel plural", "adjektiv", "ett djur", "substantiv plural", "ett påhittat djur",
-                        "en plats", "ett adjektiv", "en typ av relation", "substantiv", "en plats", "en låt",
+            typewords = ["ett namn du skulle ge till en hund", "ditt namn", "en kroppsdel", "ett adjektiv plural, tex dumma eller snälla", "en kroppsdel plural, tex händer", "ett adjektiv som beskriver en hjälte", "en eller ett + ditt favoritdjur", "något som rör på sig, ett substantiv plural", "ett påhittat djur",
+                        "en plats du aldrig varit", "ett adjektiv", "en typ av relation, tex kompis eller mamma", "något som man slänger på marken, plural", "en adress", "en låt",
                         "något man jobbar som, plural", "en färg", "ett klädesplagg"]
         }
         if(choice == "marry" ){
-            typewords = ["En påhittad figur", "En tidsperiod", "En plats", "Ett sätt att äta, dåtid", "En händelse",
-                         "Ett adjektiv man använder för att beskriva ett plagg, bestämd form",
-                         "Ett smeknamn du skulle ge en söt hund", "Ett fånigt ord", "Ett nummer", "Kroppsdel plural",
-                         "Ett verb", "Något som finns i naturen", "Ett annat ord för barn", "En känd person",
-                         "Ett adjektiv, superlativ bestämd form - ex. största, gladaste", "Något man äter, bestämd form", "Något annat man äter till det"]
+            typewords = ["En påhittad figur", "En tidsperiod", "En plats", "Ett sätt att äta, dåtid", "En händelse som du läst i nyheterna, eller varit med om själv",
+                         "Ett adjektiv man använder för att beskriva ett klädesplagg, bestämd form",
+                         "Ett smeknamn du skulle ge en söt hund", "Ett fånigt låtsasord", "Ett nummer", "En kroppsdel plural, tex händer",
+                         "Ett verb som betyder rörelse, tex vibrera eller hoppa", "Något som finns i naturen", "Ett annat ord för barn", "En känd person",
+                         "Ett adjektiv, superlativ, bestämd form - ex. största, gladaste", "Något man äter, bestämd form", "Något annat man äter till det"]
         }
         if(choice == "home" ){
-            typewords = ["ett namn", "ett land som inte finns", "en tidsperiod", "en plats", "ett tal",
-                         "ett adjektiv", "något som växer i naturen, plural (exempelvis svampar, blommor)",
-                         "ett material","ett nummer bestämd form, (exempelvis första, andra, tredje)",
-                         "ett adjektiv som slutar på a","ett djur som inte finns", "något man kan äta",
-                         "en sak plural", "ett adjektiv", "en affär", "verb som slutar på A",
-                         "ett adjektiv som slutar på A"]
+            typewords = ["ett långt och fånigt namn", "ett land som inte finns", "en tidsperiod", "Platsen där du bor", "ett nummer större än 1",
+                         "ett adjektiv som beskriver något stort och vackert", "något som växer i naturen, plural, tex svampar, blommor",
+                         "ett material som man kan tillverka saker i", "ett nummer bestämd form, tex första, andra, tredje",
+                         "ett adjektiv i bestämd form", "ett djur eller en varelse som inte finns", "något man kan äta",
+                         "något du skulle vilja äta varje dag plural", "ett adjektiv", "ett ord som betyder kompis", "namnet på en affär", "verb som slutar på A, tex springa eller hoppa",
+                         "ett adjektiv, bestämd form"]
             
          
             }
         
         if(choice == "anthem"){
-            typewords = ["adjektiv plural", "ett annat adjektiv plural", "ett adjektiv som rimmar på det förra", "ett verb som slutar på -ar, eller -er", "ett adjektiv superlativ", "något som finns i naturen, plural", "ett verb som slutar på -ar eller -er", "något som fanns förr, plural", "en synonym till gamla", "platsen där du bor", "en plats som rimmar på det", "ett frågeord (var, hur, när, varför)", "ett annat frågeord", "ett verb som slutar på -a", "ett verb som är motsatsen av det förra ordet, slutar också på -a"]
+            typewords = ["adjektiv plural", "ett annat adjektiv plural", "ett adjektiv som rimmar på det förra", "ett verb som slutar på -ar, eller -er", "ett adjektiv, bestämd form och superlativ, tex grönaste eller bästa", "något som finns i naturen, plural", "ett verb som slutar på -ar eller -er", "något som fanns förr, plural", "ett adjektiv som betyder gamla, plural", "platsen där du bor", "en plats som rimmar på det", "ett frågeord, tex var, hur, när eller varför", "ett annat frågeord", "ett verb som slutar på -a, tex springa eller hoppa", "ett verb som är motsatsen av det förra ordet, slutar också på -a"]
          
             
         }
         
         if(choice == "work" ){
-            typewords = ["en hälsning", "ditt namn", "något man jobbar som", "en hemsida", "känslan du får innan backen i en berg-o-dalbana", "en kroppsdel, bestämd form", "ett klädesplagg, bestämd form", "ett ovanligt yrke", "något som regeringen borde satsa mer pengar på", "ett roligt ord för vilket kön du har", "din ålder", "ett ordspråk", "något annat man jobbar som", "en tid på dygnet", "ett sätt man kommunicerade på förr i tiden", "ett adjektiv du skulle använda för att beskriva julen"]
+            typewords = ["en hälsning", "ditt namn", "något man jobbar som", "en hemsida som finns på internet", "tanken du får innan backen i en berg-o-dalbana", "en kroppsdel, bestämd form, tex handen", "ett klädesplagg, bestämd form", "ett ovanligt yrke", "något som regeringen borde satsa mer pengar på", "ett roligt ord för vilket kön du har", "din ålder", "ett ordspråk, tex skrattar bäst som skrattar sist", "något annat man jobbar som", "en tid på dygnet, tex soluppgång eller klockan fem", "ett sätt man kommunicerade på förr i tiden", "ett adjektiv du skulle använda för att beskriva julen"]
         }
         
         if(choice == "teacher" ){
-            typewords = ["en grönsak", "djur i bestämd form och ägandeform, tex hundens eller kattens", "en tidsperiod", "ett adjektiv som beskriver den bästa filmen du sett", "något du äter till frukost", "ett fordon i bestämd form", "ett adjektiv som slutar på -t", "en preposition tex över, under, bredvid", "ett adjektiv som slutar på -t", "en sak som finns i skogen", "ett djur", "ett avstånd", "en tidsperiod", "något man sjunker ner i", "något som är långt och hårt", "ett verb som beskriver ett sätt att förstöra något"]
+            typewords = ["en grönsak", "djur i bestämd form och ägandeform, tex hundens eller kattens", "en tidsperiod", "ett adjektiv som beskriver den bästa filmen du sett", "något du äter till frukost", "ett fordon i bestämd form, tex bilen", "ett adjektiv som slutar på -t", "en preposition tex över, under, bredvid", "ett adjektiv som slutar på -t", "en sak som finns i skogen", "ett djur du inte möter i skogen", "ett avstånd, tex fem meter eller tio mil", "en tidsperiod", "något man sjunker ner i", "något som är långt och hårt", "ett verb som beskriver ett sätt att förstöra något"]
             
         
         }
