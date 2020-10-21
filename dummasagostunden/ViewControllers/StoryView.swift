@@ -128,14 +128,7 @@ class StoryView: UIViewController {
     }
     
     
-    @IBAction func showexplain(_ sender: Any) {
-        
-        if(explainview.isHidden == true){
-            explainview.isHidden = false}
-        else{ explainview.isHidden = true
-        }
-            
-    }
+   
     
     
     
@@ -197,6 +190,14 @@ class StoryView: UIViewController {
     }
    
 
+    @IBAction func mutebutton(_ sender: Any) {
+        MusicPlayer.shared.pausemusic()
+    }
     
-
+    
+    @IBAction func cancel(_ sender: Any) {
+        presentingViewController?.dismiss(animated: true, completion: nil)
+        
+    }
+    
 }
