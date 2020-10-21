@@ -100,6 +100,15 @@
                                             <action selector="mutebutton:" destination="Y2K-AO-gob" eventType="touchUpInside" id="Y1K-p5-gJO"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAc-JP-npI">
+                                        <rect key="frame" x="192" y="834" width="30" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="GGE-Gd-nNH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
@@ -107,7 +116,9 @@
                                     <constraint firstAttribute="trailing" secondItem="Hd6-dm-jto" secondAttribute="trailing" constant="30" id="U2q-SW-orv"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="width" secondItem="iPe-Uh-lE5" secondAttribute="width" constant="-18" id="WUb-xw-XaH"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="centerX" secondItem="iPe-Uh-lE5" secondAttribute="centerX" constant="-1" id="b2g-fw-pGX"/>
+                                    <constraint firstAttribute="bottom" secondItem="wAc-JP-npI" secondAttribute="bottom" constant="40" id="bFJ-eS-dEY"/>
                                     <constraint firstItem="o0Y-cg-mqZ" firstAttribute="centerX" secondItem="iPe-Uh-lE5" secondAttribute="centerX" id="dBc-eJ-UdV"/>
+                                    <constraint firstItem="wAc-JP-npI" firstAttribute="centerX" secondItem="iPe-Uh-lE5" secondAttribute="centerX" id="lL1-z1-0Aw"/>
                                     <constraint firstItem="Hd6-dm-jto" firstAttribute="top" secondItem="iPe-Uh-lE5" secondAttribute="top" constant="40" id="qcf-tp-RbA"/>
                                     <constraint firstItem="zOh-Vd-xUv" firstAttribute="centerY" secondItem="iPe-Uh-lE5" secondAttribute="centerY" constant="-192" id="yn6-xv-IjN"/>
                                 </constraints>
@@ -157,9 +168,9 @@
                                     </constraint>
                                     <constraint firstAttribute="height" constant="390" id="YRQ-Uu-8J9"/>
                                 </constraints>
-                                <mutableString key="text">Inspirationen bakom appen StoryTajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
+                                <string key="text">Inspirationen bakom appen StoryTajm är konceptet “Mad Libs” som är en amerikansk språklek där en person får fylla i hål i en skriven berättelse med sina egna ord, ofta utan att veta ordets sammanhang. Det är ett kreativt, lekfullt och interaktivt berättarsätt där möjligheterna är oändliga. Appen är framtagen som ett skolprojekt på Högskolenivå och till en början finns bara ett begränsat antal historier att bygga ifrån men vi hoppas och tror att Storytajm kommer att fortsätta att utvecklas och växa med tiden.
 
-Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till storytajm@gmail.com . Vi svarar så fort vi har möjlighet!</mutableString>
+Har du några funderingar eller vill komma i kontakt med oss av någon anledning kan du skicka ett mejl till storytajm@gmail.com . Vi svarar så fort vi har möjlighet!</string>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -211,9 +222,9 @@ Har du några funderingar eller vill komma i kontakt med oss av någon anledning
                                     </constraint>
                                     <constraint firstAttribute="height" constant="473" id="UXK-nz-QCJ"/>
                                 </constraints>
-                                <mutableString key="text">Vad kul att du tycker om StoryTajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på storytajm@gmail.com och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
+                                <string key="text">Vad kul att du tycker om StoryTajm och vill hjälpa oss att berätta ännu fler roliga historier! Vårt mål är att Storytajm ska kunna fortsätta växa med fler historier att utgå ifrån hela tiden och med din hjälp kan vi se till att det händer!  Har du en bra idé på en historia? Skicka in ett mail till oss med antingen bara en idé eller skriv ihop ditt egna utkast och skicka in det! Texten ska vara cirka 150-200 ord lång med 15-20 ord som ska fyllas i. Ge gärna förslag på vilken typ av ord som ska läggas in i historien! Maila oss på storytajm@gmail.com och ge mailet ämnesraden “Bli en storytajmer”. Vi hör av oss till dig när vi har tid! 
 
-StoryTajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</mutableString>
+StoryTajm förbehåller sig rätten att använda, redigera och omformulera alla inkomna historier från användare. Vi ber er att hålla er till schyssta och rumsrena historier som passar användare i alla åldrar.</string>
                                 <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Här ska historien hamna " lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-Nd-a5J">
-                                        <rect key="frame" x="30" y="60" width="354" height="776"/>
+                                        <rect key="frame" x="30" y="75" width="354" height="761"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="15"/>
                                         <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-t9-kar">
-                                        <rect key="frame" x="334" y="30" width="40" height="40"/>
+                                        <rect key="frame" x="334" y="40" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="bor-79-ql3"/>
                                             <constraint firstAttribute="height" constant="40" id="yCY-z9-WfV"/>
@@ -79,15 +79,14 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerY" secondItem="T0W-K1-XUB" secondAttribute="centerY" id="1SC-0w-Rbl"/>
                                     <constraint firstAttribute="bottom" secondItem="tEL-Nd-a5J" secondAttribute="bottom" constant="60" id="8IQ-hD-kCK"/>
                                     <constraint firstAttribute="trailing" secondItem="tEL-Nd-a5J" secondAttribute="trailing" constant="30" id="9ek-Qf-xIE"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="leading" secondItem="T0W-K1-XUB" secondAttribute="leading" constant="30" id="JKY-a2-KHi"/>
                                     <constraint firstAttribute="bottom" secondItem="F93-hW-vlq" secondAttribute="bottom" constant="55" id="KGW-g1-cEd"/>
-                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="60" id="QYp-uL-fNc"/>
+                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="75" id="QYp-uL-fNc"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="YUd-lA-29G"/>
                                     <constraint firstItem="NPN-Ul-L4l" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="Ywc-Xo-OYO"/>
-                                    <constraint firstItem="Uza-t9-kar" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="30" id="lYi-Nk-Q73"/>
+                                    <constraint firstItem="Uza-t9-kar" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="40" id="lYi-Nk-Q73"/>
                                     <constraint firstAttribute="bottom" secondItem="NPN-Ul-L4l" secondAttribute="bottom" constant="30" id="u3t-Ul-gId"/>
                                     <constraint firstAttribute="trailing" secondItem="F93-hW-vlq" secondAttribute="trailing" constant="30" id="uYx-GW-VX4"/>
                                     <constraint firstAttribute="trailing" secondItem="Uza-t9-kar" secondAttribute="trailing" constant="40" id="y92-FP-2yL"/>
