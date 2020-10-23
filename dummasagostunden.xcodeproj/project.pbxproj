@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		144F63B6252F371B00C9FFFB /* Try2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F63B5252F371B00C9FFFB /* Try2VC.swift */; };
 		146A23B7251BB34C003BD169 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146A23B6251BB34C003BD169 /* Start.storyboard */; };
 		146A23BA251BB36E003BD169 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146A23B9251BB36E003BD169 /* StartView.swift */; };
+		147273D82540787800155119 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 147273D72540787800155119 /* GoogleService-Info.plist */; };
 		14751FFC2513575F00101FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFB2513575F00101FF8 /* AppDelegate.swift */; };
 		14751FFE2513575F00101FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFD2513575F00101FF8 /* SceneDelegate.swift */; };
 		147520002513575F00101FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFF2513575F00101FF8 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		14B5EE5F2539F302005FCDFE /* Musicplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B5EE5E2539F302005FCDFE /* Musicplayer.swift */; };
 		14B5EE632539F94E005FCDFE /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE622539F94E005FCDFE /* Music.mp3 */; };
 		14B5EE69253A08C5005FCDFE /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE68253A08C5005FCDFE /* Woosh.mp3 */; };
+		22BFAB7CB53B8BBB69E8D596 /* Pods_dummasagostunden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDB5A2FF4CAFBB88501F904 /* Pods_dummasagostunden.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		144F63B5252F371B00C9FFFB /* Try2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try2VC.swift; sourceTree = "<group>"; };
 		146A23B6251BB34C003BD169 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		146A23B9251BB36E003BD169 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		147273D72540787800155119 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14751FF82513575F00101FF8 /* dummasagostunden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dummasagostunden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14751FFB2513575F00101FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14751FFD2513575F00101FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		14B5EE5E2539F302005FCDFE /* Musicplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicplayer.swift; sourceTree = "<group>"; };
 		14B5EE622539F94E005FCDFE /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music.mp3; path = Assets.xcassets/Music.dataset/Music.mp3; sourceTree = "<group>"; };
 		14B5EE68253A08C5005FCDFE /* Woosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Woosh.mp3; sourceTree = "<group>"; };
+		422830BC002FD8660649F40D /* Pods-dummasagostunden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dummasagostunden.release.xcconfig"; path = "Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden.release.xcconfig"; sourceTree = "<group>"; };
+		43E8055DF7072FDB467EA182 /* Pods-dummasagostunden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dummasagostunden.debug.xcconfig"; path = "Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden.debug.xcconfig"; sourceTree = "<group>"; };
+		BCDB5A2FF4CAFBB88501F904 /* Pods_dummasagostunden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dummasagostunden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BFAB7CB53B8BBB69E8D596 /* Pods_dummasagostunden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,8 @@
 			children = (
 				14751FFA2513575F00101FF8 /* dummasagostunden */,
 				14751FF92513575F00101FF8 /* Products */,
+				D87ECFE83F233774CAE8164A /* Pods */,
+				7D8AACDEF86C2C08D39CA61F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 				1475200F25135FFB00101FF8 /* Storyboards */,
 				14752014251360F100101FF8 /* ViewControllers */,
 				147520092513576200101FF8 /* Info.plist */,
+				147273D72540787800155119 /* GoogleService-Info.plist */,
 			);
 			path = dummasagostunden;
 			sourceTree = "<group>";
@@ -135,6 +145,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		7D8AACDEF86C2C08D39CA61F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDB5A2FF4CAFBB88501F904 /* Pods_dummasagostunden.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D87ECFE83F233774CAE8164A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43E8055DF7072FDB467EA182 /* Pods-dummasagostunden.debug.xcconfig */,
+				422830BC002FD8660649F40D /* Pods-dummasagostunden.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1475200C2513576200101FF8 /* Build configuration list for PBXNativeTarget "dummasagostunden" */;
 			buildPhases = (
+				321C6CCAC288E27723E84D5D /* [CP] Check Pods Manifest.lock */,
 				14751FF42513575F00101FF8 /* Sources */,
 				14751FF52513575F00101FF8 /* Frameworks */,
 				14751FF62513575F00101FF8 /* Resources */,
+				9841AE399A1519C030F18EEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,12 +228,55 @@
 				146A23B7251BB34C003BD169 /* Start.storyboard in Resources */,
 				14B5EE632539F94E005FCDFE /* Music.mp3 in Resources */,
 				147520052513576200101FF8 /* Assets.xcassets in Resources */,
+				147273D82540787800155119 /* GoogleService-Info.plist in Resources */,
 				147520032513575F00101FF8 /* Main.storyboard in Resources */,
 				14361B77251CA9650050C11E /* Choose.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		321C6CCAC288E27723E84D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dummasagostunden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9841AE399A1519C030F18EEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14751FF42513575F00101FF8 /* Sources */ = {
@@ -363,10 +435,12 @@
 		};
 		1475200D2513576200101FF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E8055DF7072FDB467EA182 /* Pods-dummasagostunden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -384,10 +458,12 @@
 		};
 		1475200E2513576200101FF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422830BC002FD8660649F40D /* Pods-dummasagostunden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
