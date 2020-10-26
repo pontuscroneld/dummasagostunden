@@ -28,6 +28,7 @@ class StartView: UIViewController {
     @IBAction func buttonstart(_ sender: Any) {
         //MusicPlayer.shared.buttonsound()
         //Skickas till ChooseView
+        EffectPlayer.shared.buttonsound()
         
         
     }
@@ -35,6 +36,15 @@ class StartView: UIViewController {
     @IBAction func mutebutton(_ sender: Any) {
         MusicPlayer.shared.pausemusic()
         }
+    
+    @IBAction func becomebutton(_ sender: Any) {
+        EffectPlayer.shared.buttonsound()
+    }
+    
+    @IBAction func knowmorebutton(_ sender: Any) {
+        EffectPlayer.shared.buttonsound()
+    }
+    
         
 }
     

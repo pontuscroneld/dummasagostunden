@@ -26,6 +26,7 @@
 		14B5EE5F2539F302005FCDFE /* Musicplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B5EE5E2539F302005FCDFE /* Musicplayer.swift */; };
 		14B5EE632539F94E005FCDFE /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE622539F94E005FCDFE /* Music.mp3 */; };
 		14B5EE69253A08C5005FCDFE /* Woosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14B5EE68253A08C5005FCDFE /* Woosh.mp3 */; };
+		14F87AE22546DD9000D44BED /* Effectplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F87AE12546DD9000D44BED /* Effectplayer.swift */; };
 		22BFAB7CB53B8BBB69E8D596 /* Pods_dummasagostunden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDB5A2FF4CAFBB88501F904 /* Pods_dummasagostunden.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		14B5EE5E2539F302005FCDFE /* Musicplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicplayer.swift; sourceTree = "<group>"; };
 		14B5EE622539F94E005FCDFE /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music.mp3; path = Assets.xcassets/Music.dataset/Music.mp3; sourceTree = "<group>"; };
 		14B5EE68253A08C5005FCDFE /* Woosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Woosh.mp3; sourceTree = "<group>"; };
+		14F87AE12546DD9000D44BED /* Effectplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effectplayer.swift; sourceTree = "<group>"; };
 		422830BC002FD8660649F40D /* Pods-dummasagostunden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dummasagostunden.release.xcconfig"; path = "Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden.release.xcconfig"; sourceTree = "<group>"; };
 		43E8055DF7072FDB467EA182 /* Pods-dummasagostunden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dummasagostunden.debug.xcconfig"; path = "Target Support Files/Pods-dummasagostunden/Pods-dummasagostunden.debug.xcconfig"; sourceTree = "<group>"; };
 		BCDB5A2FF4CAFBB88501F904 /* Pods_dummasagostunden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dummasagostunden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				14B5EE5E2539F302005FCDFE /* Musicplayer.swift */,
+				14F87AE12546DD9000D44BED /* Effectplayer.swift */,
 				14751FFF2513575F00101FF8 /* ViewController.swift */,
 				14752012251360E800101FF8 /* StoryView.swift */,
 				146A23B9251BB36E003BD169 /* StartView.swift */,
@@ -292,6 +295,7 @@
 				14751FFC2513575F00101FF8 /* AppDelegate.swift in Sources */,
 				14752013251360E800101FF8 /* StoryView.swift in Sources */,
 				14751FFE2513575F00101FF8 /* SceneDelegate.swift in Sources */,
+				14F87AE22546DD9000D44BED /* Effectplayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -463,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

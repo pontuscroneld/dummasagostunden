@@ -21,7 +21,7 @@ class Try2VC: UIViewController {
     
     @IBAction func holidaychoice(_ sender: Any) {
         thechoice = "holiday"
-        
+        EffectPlayer.shared.buttonsound()
         segue()
     
         
@@ -29,16 +29,19 @@ class Try2VC: UIViewController {
     
     @IBAction func sorrychoice(_ sender: Any) {
         thechoice = "sorry"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
     @IBAction func marrychoice(_ sender: Any) {
         thechoice = "marry"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
     @IBAction func homechoice(_ sender: Any) {
         thechoice = "home"
+        EffectPlayer.shared.buttonsound()
         segue()
         
     }
@@ -46,23 +49,27 @@ class Try2VC: UIViewController {
     
     @IBAction func anthemchoice(_ sender: Any) {
         thechoice = "anthem"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
     @IBAction func workchoice(_ sender: Any) {
         thechoice = "work"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
     
     @IBAction func teacher(_ sender: Any) {
         thechoice = "teacher"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
     
     @IBAction func test(_ sender: Any) {
         thechoice = "test"
+        EffectPlayer.shared.buttonsound()
         segue()
     }
     
@@ -79,7 +86,8 @@ class Try2VC: UIViewController {
     }
    
     @IBAction func dismiss(_ sender: Any) {
-    
+        
+        EffectPlayer.shared.buttonsound()
         presentingViewController?.dismiss(animated: true, completion: nil)
     
     

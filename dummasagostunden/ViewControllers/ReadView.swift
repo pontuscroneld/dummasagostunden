@@ -73,6 +73,7 @@ class ReadView: UIViewController {
         
        spk.stopSpeaking(at: AVSpeechBoundary.immediate)
         MusicPlayer.shared.audioPlayer?.volume = 0.5
+        EffectPlayer.shared.buttonsound()
         
         presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
         

@@ -18,22 +18,26 @@ class ChooseView: UIViewController {
     }
     @IBAction func holidaychoice(_ sender: Any) {
         thechoice = "holiday"
+        EffectPlayer.shared.buttonsound()
         performSegue(withIdentifier: "storychosen", sender: nil)
         
         
     }
     @IBAction func sorrychoice(_ sender: Any) {
         thechoice = "sorry"
+        EffectPlayer.shared.buttonsound()
         performSegue(withIdentifier: "storychosen", sender: nil)
         
     }
     @IBAction func marrychoice(_ sender: Any) {
         thechoice = "marry"
+        EffectPlayer.shared.buttonsound()
         performSegue(withIdentifier: "storychosen", sender: nil)
         
     }
     @IBAction func homechoice(_ sender: Any) {
         thechoice = "home"
+        EffectPlayer.shared.buttonsound()
         performSegue(withIdentifier: "storychosen", sender: nil)
         
     }
@@ -48,6 +52,7 @@ class ChooseView: UIViewController {
     
     
     @IBAction func goback(_ sender: Any) {
+        EffectPlayer.shared.buttonsound()
         presentingViewController?.dismiss(animated: false, completion: nil)
     }
     

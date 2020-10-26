@@ -57,6 +57,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="becomebutton:" destination="Y2K-AO-gob" eventType="touchUpInside" id="dsY-W1-edB"/>
                                                     <segue destination="CLr-i2-AO1" kind="show" id="BEC-W0-N8m"/>
                                                 </connections>
                                             </button>
@@ -67,6 +68,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="knowmorebutton:" destination="Y2K-AO-gob" eventType="touchUpInside" id="HqW-yh-OEz"/>
                                                     <segue destination="6gR-rX-BvO" kind="show" id="UWP-mf-ODG"/>
                                                 </connections>
                                             </button>
