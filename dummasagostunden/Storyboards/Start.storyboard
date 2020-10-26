@@ -102,7 +102,7 @@
                                             <action selector="mutebutton:" destination="Y2K-AO-gob" eventType="touchUpInside" id="Y1K-p5-gJO"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAc-JP-npI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAc-JP-npI">
                                         <rect key="frame" x="192" y="834" width="30" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="GGE-Gd-nNH"/>

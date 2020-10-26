@@ -195,8 +195,14 @@ class StoryView: UIViewController {
     
     
     @IBAction func cancel(_ sender: Any) {
+        EffectPlayer.shared.buttonsound()
         presentingViewController?.dismiss(animated: true, completion: nil)
         
+    }
+    
+    
+    @IBAction func explainbutton(_ sender: Any) {
+        EffectPlayer.shared.buttonsound()
     }
     
 }
