@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZcD-Pq-hXL">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -20,14 +20,14 @@
             <objects>
                 <viewController id="ZcD-Pq-hXL" customClass="ReadView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0n5-Ek-v2z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-K1-XUB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Här ska historien hamna " lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-Nd-a5J">
-                                        <rect key="frame" x="30" y="75" width="354" height="761"/>
+                                        <rect key="frame" x="30" y="25" width="315" height="562"/>
                                         <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="15"/>
                                         <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-Ul-L4l">
-                                        <rect key="frame" x="132" y="786" width="150" height="80"/>
+                                        <rect key="frame" x="112.5" y="557" width="150" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="0O0-F8-5TB"/>
                                             <constraint firstAttribute="width" constant="150" id="R79-1K-Eyd"/>
@@ -49,8 +49,21 @@
                                             <action selector="startover:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="1Pf-xn-Rzz"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F93-hW-vlq">
+                                        <rect key="frame" x="285" y="580" width="60" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="1CE-Nu-zYu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="15"/>
+                                        <state key="normal" title="Läs igen!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="readagain:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="L7l-dh-uoc"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-t9-kar">
-                                        <rect key="frame" x="334" y="40" width="40" height="40"/>
+                                        <rect key="frame" x="40" y="577" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="bor-79-ql3"/>
                                             <constraint firstAttribute="height" constant="40" id="yCY-z9-WfV"/>
@@ -63,33 +76,20 @@
                                             <action selector="mutebutton:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="CiF-gH-wIQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F93-hW-vlq">
-                                        <rect key="frame" x="324" y="809" width="60" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="1CE-Nu-zYu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="15"/>
-                                        <state key="normal" title="Läs igen!">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="readagain:" destination="ZcD-Pq-hXL" eventType="touchUpInside" id="L7l-dh-uoc"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tEL-Nd-a5J" secondAttribute="bottom" constant="60" id="8IQ-hD-kCK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uza-t9-kar" secondAttribute="bottom" constant="50" id="7gH-Km-fNv"/>
+                                    <constraint firstAttribute="bottom" secondItem="tEL-Nd-a5J" secondAttribute="bottom" constant="80" id="8IQ-hD-kCK"/>
                                     <constraint firstAttribute="trailing" secondItem="tEL-Nd-a5J" secondAttribute="trailing" constant="30" id="9ek-Qf-xIE"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="leading" secondItem="T0W-K1-XUB" secondAttribute="leading" constant="30" id="JKY-a2-KHi"/>
                                     <constraint firstAttribute="bottom" secondItem="F93-hW-vlq" secondAttribute="bottom" constant="55" id="KGW-g1-cEd"/>
-                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="75" id="QYp-uL-fNc"/>
+                                    <constraint firstItem="tEL-Nd-a5J" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="25" id="QYp-uL-fNc"/>
                                     <constraint firstItem="tEL-Nd-a5J" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="YUd-lA-29G"/>
                                     <constraint firstItem="NPN-Ul-L4l" firstAttribute="centerX" secondItem="T0W-K1-XUB" secondAttribute="centerX" id="Ywc-Xo-OYO"/>
-                                    <constraint firstItem="Uza-t9-kar" firstAttribute="top" secondItem="T0W-K1-XUB" secondAttribute="top" constant="40" id="lYi-Nk-Q73"/>
+                                    <constraint firstItem="Uza-t9-kar" firstAttribute="leading" secondItem="T0W-K1-XUB" secondAttribute="leading" constant="40" id="kRC-mR-VTt"/>
                                     <constraint firstAttribute="bottom" secondItem="NPN-Ul-L4l" secondAttribute="bottom" constant="30" id="u3t-Ul-gId"/>
                                     <constraint firstAttribute="trailing" secondItem="F93-hW-vlq" secondAttribute="trailing" constant="30" id="uYx-GW-VX4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Uza-t9-kar" secondAttribute="trailing" constant="40" id="y92-FP-2yL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fU-Qt-uUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342.02898550724638" y="43.526785714285715"/>
+            <point key="canvasLocation" x="-343.19999999999999" y="42.728635682158924"/>
         </scene>
         <!--Start-->
         <scene sceneID="3D0-YS-kss">
