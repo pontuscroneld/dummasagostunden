@@ -189,127 +189,6 @@
             </objects>
             <point key="canvasLocation" x="-571.01449275362324" y="953.57142857142856"/>
         </scene>
-        <!--Choose View-->
-        <scene sceneID="oY1-rE-yD9">
-            <objects>
-                <viewController id="4xZ-Ap-M7K" customClass="ChooseView" customModule="dummasagostunden" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qpJ-6Q-pDQ">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Y4-0z-nFb" userLabel="Background area">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-Cv-SbY" userLabel="Buttonstack">
-                                        <rect key="frame" x="150" y="150" width="510" height="730"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-PK-oIx">
-                                                <rect key="frame" x="0.0" y="0.0" width="510" height="182.5"/>
-                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
-                                                <state key="normal" title="MIN HÄRLIGA SEMESTER" backgroundImage="buttonorange">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="holidaychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="Tqg-OH-8hU"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpO-Tp-6m9">
-                                                <rect key="frame" x="0.0" y="182.5" width="510" height="182.5"/>
-                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="23"/>
-                                                <state key="normal" title="FÖRLÅT MIG, ETT BREV" backgroundImage="buttonorange">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="sorrychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="LuR-Bx-zuk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-Yh-pVO">
-                                                <rect key="frame" x="0.0" y="365" width="510" height="182.5"/>
-                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
-                                                <state key="normal" title="VILL DU GIFTA DIG MED MIG?" backgroundImage="buttonorange">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="marrychoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="5G0-Mc-EzR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3N-SE-0da">
-                                                <rect key="frame" x="0.0" y="547.5" width="510" height="182.5"/>
-                                                <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="22"/>
-                                                <state key="normal" title="GREVENS NYA HEM" backgroundImage="buttonorange">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="homechoice:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="G7n-oj-6Qg"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DET KOMMER SNART FLER..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Yg-ewf">
-                                        <rect key="frame" x="316" y="900" width="178" height="22"/>
-                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-Yw-m5R">
-                                        <rect key="frame" x="316" y="942" width="178" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="PfR-wF-VcL"/>
-                                            <constraint firstAttribute="width" constant="178" id="qlL-LV-o2s"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Chewy-Regular" family="Chewy" pointSize="17"/>
-                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="TILLBAKA TILL START?">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="goback:" destination="4xZ-Ap-M7K" eventType="touchUpInside" id="lRb-DR-dnI"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="05D-DV-DU8"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" constant="151" id="MAD-Sh-OfR">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="Dfu-Cv-SbY" secondAttribute="trailing" constant="40" id="O0Q-Jw-2dd">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
-                                    </constraint>
-                                    <constraint firstItem="5Vy-Yg-ewf" firstAttribute="top" secondItem="Dfu-Cv-SbY" secondAttribute="bottom" id="WGm-Ya-RPY">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                    </constraint>
-                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="cAP-Or-vgM"/>
-                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="leading" secondItem="1Y4-0z-nFb" secondAttribute="leading" constant="40" id="f9V-z3-vbj">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
-                                    </constraint>
-                                    <constraint firstItem="79D-Yw-m5R" firstAttribute="top" secondItem="5Vy-Yg-ewf" secondAttribute="bottom" constant="20" id="fpq-Za-QoI"/>
-                                    <constraint firstItem="79D-Yw-m5R" firstAttribute="centerX" secondItem="1Y4-0z-nFb" secondAttribute="centerX" id="gb9-eK-wne"/>
-                                    <constraint firstItem="Dfu-Cv-SbY" firstAttribute="top" secondItem="1Y4-0z-nFb" secondAttribute="top" constant="115" id="nNf-QA-LDe">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
-                                    </constraint>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9LY-fM-lyR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="top" secondItem="qpJ-6Q-pDQ" secondAttribute="top" id="2LU-c7-8Ok"/>
-                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="trailing" secondItem="9LY-fM-lyR" secondAttribute="trailing" id="IEA-3W-qdY"/>
-                            <constraint firstItem="1Y4-0z-nFb" firstAttribute="leading" secondItem="9LY-fM-lyR" secondAttribute="leading" id="Jvn-zK-0Cz"/>
-                            <constraint firstAttribute="bottom" secondItem="1Y4-0z-nFb" secondAttribute="bottom" id="i7n-3l-nuj"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="Noe-b0-lJb" kind="modal" identifier="storychosen" modalPresentationStyle="fullScreen" id="nFm-7I-VaK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-wl-XSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="486" y="942"/>
-        </scene>
         <!--Main-->
         <scene sceneID="Wzc-UD-txz">
             <objects>
@@ -321,15 +200,9 @@
             <point key="canvasLocation" x="946" y="96"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="fTs-I1-xYk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Muteknapp2" width="500" height="500"/>
         <image name="buttonorange" width="300" height="100"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14361B77251CA9650050C11E /* Choose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14361B76251CA9650050C11E /* Choose.storyboard */; };
-		14361B7A251CAC730050C11E /* ChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14361B79251CAC730050C11E /* ChooseView.swift */; };
 		14361B7D251CBCEC0050C11E /* ReadLoud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14361B7C251CBCEC0050C11E /* ReadLoud.storyboard */; };
 		14361B80251CBD070050C11E /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14361B7F251CBD070050C11E /* ReadView.swift */; };
 		144F63B6252F371B00C9FFFB /* Try2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F63B5252F371B00C9FFFB /* Try2VC.swift */; };
@@ -17,7 +16,6 @@
 		147273D82540787800155119 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 147273D72540787800155119 /* GoogleService-Info.plist */; };
 		14751FFC2513575F00101FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFB2513575F00101FF8 /* AppDelegate.swift */; };
 		14751FFE2513575F00101FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFD2513575F00101FF8 /* SceneDelegate.swift */; };
-		147520002513575F00101FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14751FFF2513575F00101FF8 /* ViewController.swift */; };
 		147520032513575F00101FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147520012513575F00101FF8 /* Main.storyboard */; };
 		147520052513576200101FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147520042513576200101FF8 /* Assets.xcassets */; };
 		147520082513576200101FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147520062513576200101FF8 /* LaunchScreen.storyboard */; };
@@ -32,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		14361B76251CA9650050C11E /* Choose.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Choose.storyboard; sourceTree = "<group>"; };
-		14361B79251CAC730050C11E /* ChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseView.swift; sourceTree = "<group>"; };
 		14361B7C251CBCEC0050C11E /* ReadLoud.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadLoud.storyboard; sourceTree = "<group>"; };
 		14361B7F251CBD070050C11E /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 		144F63B5252F371B00C9FFFB /* Try2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try2VC.swift; sourceTree = "<group>"; };
@@ -42,7 +39,6 @@
 		14751FF82513575F00101FF8 /* dummasagostunden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dummasagostunden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14751FFB2513575F00101FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14751FFD2513575F00101FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14751FFF2513575F00101FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		147520022513575F00101FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		147520042513576200101FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147520072513576200101FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,10 +134,8 @@
 			children = (
 				14B5EE5E2539F302005FCDFE /* Musicplayer.swift */,
 				14F87AE12546DD9000D44BED /* Effectplayer.swift */,
-				14751FFF2513575F00101FF8 /* ViewController.swift */,
 				14752012251360E800101FF8 /* StoryView.swift */,
 				146A23B9251BB36E003BD169 /* StartView.swift */,
-				14361B79251CAC730050C11E /* ChooseView.swift */,
 				14361B7F251CBD070050C11E /* ReadView.swift */,
 				144F63B5252F371B00C9FFFB /* Try2VC.swift */,
 			);
@@ -286,9 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147520002513575F00101FF8 /* ViewController.swift in Sources */,
 				144F63B6252F371B00C9FFFB /* Try2VC.swift in Sources */,
-				14361B7A251CAC730050C11E /* ChooseView.swift in Sources */,
 				146A23BA251BB36E003BD169 /* StartView.swift in Sources */,
 				14361B80251CBD070050C11E /* ReadView.swift in Sources */,
 				14B5EE5F2539F302005FCDFE /* Musicplayer.swift in Sources */,
@@ -444,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -467,7 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 89DQD8B7D7;
 				INFOPLIST_FILE = dummasagostunden/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
