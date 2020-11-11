@@ -17,8 +17,6 @@ class StoryView: UIViewController {
     
     var playerwords = [String]()
     var typewords = [String]()
-    var rhyme1 = ""
-    var rhyme2 = ""
     var index = 0
     
     var choice = ""
@@ -200,9 +198,31 @@ class StoryView: UIViewController {
         
     }
     
-    
     @IBAction func explainbutton(_ sender: Any) {
         EffectPlayer.shared.buttonsound()
+    }
+    
+    
+    @IBAction func changeprevious(_ sender: Any) {
+        
+        if(index == 0){
+            return
+        } else {
+            index -= 1
+            Textfield.text = playerwords[index]
+            playerwords.remove(at: index)
+            negativeprogress()
+            givemeword()
+        }
+    }
+        
+    
+    
+    func negativeprogress(){
+        self.progressrate.completedUnitCount -= 1
+        let progressFloat = Float(self.progressrate.fractionCompleted)
+        self.progressview.setProgress(progressFloat, animated: true)
+        
     }
     
 }
