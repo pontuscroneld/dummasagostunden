@@ -12,35 +12,21 @@ class StoryView: UIViewController {
     
     @IBOutlet weak var Textfield: UITextField!
     @IBOutlet weak var Neededword: UILabel!
-    
+    @IBOutlet weak var progressview: UIProgressView!
     @IBOutlet weak var explainview: UIView!
     
     var playerwords = [String]()
     var typewords = [String]()
     var index = 0
-    
     var choice = ""
     var progressrate = Progress(totalUnitCount: 0)
-    
-    @IBOutlet weak var progressview: UIProgressView!
-  
     var myMutableStringTitle = NSMutableAttributedString()
     let Name  = "Enter Title" // PlaceHolderText
-
-   
-    
-    
-    
+ 
     //playerwords är orden som spelaren ska fylla i
     //typewords är beskrivningen av vilket ord spelaren ska fylla i
     //index är sättet att hålla koll på att playerwords och typewords är samma nummer
-    
-    
-    
-    
-    
     //typewords måste ha ett bestämt antal innan funktionen givemeword() kallas.
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +34,6 @@ class StoryView: UIViewController {
         playerwords.removeAll()
         typewords.removeAll()
         index = 0
-       
-
-        
-        
-
-        //givemeword() ska eventuellt inleda, förutsatt att filen fått informationen från ChooseView, vilken historia som valts och därmed vilken typewords som ska användas.
        
         if(choice == "holiday" ){
             typewords = ["en tidsperiod", "en plats du aldrig har varit", "en påhittad karaktär", "ett efternamn", "ett ovanligt djur", "ett adjektiv",
@@ -103,31 +83,15 @@ class StoryView: UIViewController {
         
         if(choice == "test" ){
             typewords = ["en siffra", "ett namn", "en färg"]
-            
-        
         }
         
         progressrate = Progress(totalUnitCount: Int64(typewords.count))
-        
         givemeword()
-       
-        
     }
     
     func givemeword(){
-        
-    
-       
-        //Jag behöver ett typewords med plats (index) i listan
         Neededword.text = typewords[index]
-        
-        
     }
-    
-    
-   
-    
-    
     
     @IBAction func addword(_ sender: Any) {
     
@@ -135,7 +99,6 @@ class StoryView: UIViewController {
         {
             return
         }
-    //Det som står i textfältet läggs till i arrayen på plats wordturn, och ger sedan wordturn +1 för att gå vidare till nästa ineed ord
         playerwords.append(Textfield.text!)
         Textfield.text = ""
         index += 1
@@ -146,7 +109,6 @@ class StoryView: UIViewController {
     
     func checkifdone(){
     
-        
         if(index == typewords.count) {
         finishstory()
         }
@@ -159,7 +121,6 @@ class StoryView: UIViewController {
         print(playerwords)
         //Skicka vidare full array playerwords till läs-sida?
         performSegue(withIdentifier: "readstory", sender: nil)
-
     }
     
     func progressbar()
