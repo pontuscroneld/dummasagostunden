@@ -27,8 +27,6 @@ class MusicPlayer {
                         } catch {
                             print("error")
                         }
-            
-                    
         }
     }
     

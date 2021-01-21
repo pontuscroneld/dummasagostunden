@@ -119,7 +119,6 @@ class StoryView: UIViewController {
         
     func finishstory(){
         print(playerwords)
-        //Skicka vidare full array playerwords till läs-sida?
         performSegue(withIdentifier: "readstory", sender: nil)
     }
     
@@ -176,9 +175,7 @@ class StoryView: UIViewController {
             givemeword()
         }
     }
-        
-    
-    
+
     func negativeprogress(){
         self.progressrate.completedUnitCount -= 1
         let progressFloat = Float(self.progressrate.fractionCompleted)
